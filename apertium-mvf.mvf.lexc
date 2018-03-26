@@ -1,11 +1,175 @@
 ! Morphological Transducer for mvf
 
 Multichar_Symbols
-
 ! Part of speech categories
-%<n%>  ! Noun
-%<pl%> ! Plural
-%<sg%> ! Singular
+%<n%>         ! Noun
+%<np%>        ! Proper noun
+%<adj%>       ! Adjective
+%<num%>       ! Numeral
+%<prn%>       ! Pronoun
+%<det%>       ! Determiner
+%<v%>         ! Verb
+%<vaux%>      ! Auxilary verb
+%<adv%>       ! Adverb                     ! Наречие
+%<post%>      ! Postposition
+%<postadv%>   ! Postadverb
+%<cnjcoo%>    ! Co-ordinating conjunction
+%<cnjsub%>    ! Sub-ordinating conjunction
+%<cnjadv%>    ! Adverbial conjunction
+%<part%>      ! Particle
+%<ij%>        ! Interjection
+%<abbr%>      ! Abbreviation
+%<cop%>       ! Copula
+
+! Proper noun types
+%<top%>       ! Toponym
+%<ant%>       ! Anthroponym
+%<cog%>       ! Cognomen
+%<pat%>       ! Patronym     ! Отчество
+%<org%>       ! Organization
+%<al%>        ! Other
+
+!! gender of anthroponyms and cognoms
+%<m%>         ! Masculine
+%<f%>         ! Feminine
+%<mf%>        ! Masculine/feminine !# basically cognoms without -ов/-ова,
+              ! -ин/-ина endings
+
+! "Syntactic" tags. Attributive use of non-adjectives etc.
+%<attr%>      ! Attributive
+%<subst%>     ! Substantive
+%<advl%>      ! Adverbial
+
+! Number
+%<sg%>        ! Singular
+%<pl%>        ! Plural
+
+! Possessives
+%<px1sg%>     ! First person singular
+%<px2sg%>     ! Second person singular
+%<px3sp%>     ! Third person singular/plural
+%<px1pl%>     ! First person plural
+%<px2pl%>     ! Second person plural
+%<px%>        ! General possessive
+
+! Cases
+%<nom%>       ! Nominative
+%<gen%>       ! Genitive
+%<gens%>      ! Short/clitic Genitive (used with nouns)
+%<dat%>       ! Dative
+%<acc%>       ! Accusative
+%<abl%>       ! Ablative
+%<loc%>       ! Locative
+%<ins%>       ! Instrumental
+%<dir%>       ! Directional
+
+%<refl%>      ! Reflexive
+
+!! some additional ~cases
+%<sim%>       ! Similative (<apprx> in kymorph)
+              !#
+%<abe%>       ! Abessive=Privative ! Лишительный
+              !#
+%<reas%>      ! Reason
+
+! Levels of comparison of adjectives
+%<comp%>      ! Comparative
+%<sup%>       ! Superlative
+
+! Pronoun types
+%<pers%>      ! Personal
+%<recip%>     ! Reciprocal
+! Pronoun and determiner types
+%<dem%>       ! Demonstrative
+%<ind%>       ! Indefinite
+%<itg%>       ! Interrogative
+%<qnt%>       ! Quantifier
+%<neg%>       ! Negative       !# еш нерсе
+              ! (NOTE: also used to denote negation in verbs, i.e for м{A})
+%<ref%>       ! Reflexive
+
+! Numeral types
+%<ord%>       ! Ordinal
+%<coll%>      ! Collective
+%<dist%>      ! Distributive
+
+! Verbal features
+
+!! Mood
+%<imp%>       ! Imperative
+%<opt%>       ! Optative/jussive
+%<sug%>       ! Suggestion
+
+!! Derivation
+%<caus%>      ! Causative
+%<pass%>      ! Passive
+%<coop%>      ! Cooperative
+
+!! Tense / finite forms
+%<pres%>      ! for "жатыр", "тұр", "отыр" and "жүр"
+%<aor%>       ! -{E}                    ! non-past (afaik /IS/)
+%<past%>      ! -{G}{A}н                ! past
+%<ifi%>       ! -{D}{I}                 ! eyewitness past
+%<hab%>       ! habitual
+%<ifi_evid%>  ! -{I}пт{I}               ! "reported past" (afaik /IS/)
+%<fut%>       ! -{I}р                   ! future
+%<fut_plan%>  ! -{M}{A}{K}              ! future plan
+
+%<evid%>      ! evidential
+              ! The former is not handled here
+              ! in lexc anymore, the latter was renamed from <ifi><evid> to
+              ! <ifi_evid>
+
+!! Non-Finite verb forms
+%<gna%>       ! generic verbal adverb
+%<gna_prf%>   ! perfective verbal adverb
+%<gna_imp%>   ! imperfective verbal adverb
+%<gna_cnd%>   ! conditional verbal adverb
+%<gna2%>      ! "until" verbal adverb
+%<ger%>       ! future gerund
+%<ger_imp%>   ! imperfective gerund
+%<ger_prf%>   ! perfective gerund
+
+!!! Participles
+
+!! Transitivity
+%<tv%>        ! Transitive
+%<iv%>        ! Intransitive
+%<TD%>        ! Temporary tag
+
+! Person
+%<p1%>        ! First person
+%<p2%>        ! Second person
+%<p3%>        ! Third person
+%<frm%>       ! Formality
+%<infm%>      ! Informal
+
+! Modal particles
+%<qst%>       ! Modal question particle
+%<mod_foc%>   ! "Particles of politeness and ardent desire"
+              ! (as in [N. Poppe. Tatar Manual]) or
+              ! "what about ..." question particles" :)
+              ! (as in kir.lexc)
+%<mod_ass%>   ! Assertive modal particle
+%<mod%>       ! Modal verbs (шығар, сияқты etc)
+
+! Punctuation
+%<sent%>      ! Sentence marker
+%<guio%>      ! Hyphen
+%<cm%>        ! Comma
+%<apos%>      ! Apostrophe
+%<rquot%>     ! Quote marker (right hand side)
+%<lquot%>     ! Quote marker (left hand side)
+%<rpar%>      ! Parenthetical marker (right hand side)
+%<lpar%>      ! Parenthetical marker (left hand side)
+
+%>            ! Morpheme boundary
+!%             ! Space
+%-            !
+%,            !
+%.            !
+%%            !
+%+            ! clitic space
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
@@ -13,27 +177,802 @@ Multichar_Symbols
 
 LEXICON Root
 
-NounRoot ;
+Nouns ;
+Verbs ;
+Pronouns ;
+Conjunctions ;
+Adverbs ;
+Adjectives ;
+Postpositions ;
+Postadverbs ;
+Determiners ;
+Numbers ;
+Particles ;
+ProperNouns ;
+Punctuation ;
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!                          L E X I C O N                                  !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON NounRoot
+LEXICON Clit-Qst
++вэ%<qst%>:% %{В%}э # ;         ! wh-question
++уу%<qst%>:% %{У%}%{У%} # ;     ! yes/no-question
 
-house RegNounInfl ; ! A noun
+LEXICON Clit-NonQst
 
-LEXICON RegNounInfl
++даа%<qst%>:% д%{А1%}%{А2%} # ;   !
++аа%<qst%>:% %{А1%}%{А2%} # ;     !
++билээ%<qst%>:% билээ # ;       ! assumed previously known information (?)
 
-%<n%>%<sg%>:   # ;
-%<n%>%<pl%>:s   # ;
 
-! Resources:
-! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Lexicon
-! http://wiki.apertium.org/wiki/Lttoolbox_and_lexc
-! http://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
-! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
-! http://hfst.sourceforge.net/
-! http://www.cis.upenn.edu/~cis639/docs/lexc.html
-! http://wiki.apertium.org/wiki/Hfst
+LEXICON Clit
+! Sentence-final clitics
 
+# ;
+Clit-Qst ;
+Clit-NonQst ;
+
+
+LEXICON Cases-Normal
+
+%<nom%>: Clit ;
+%<acc%>:%>%{I%}%{й%}г Clit ;
+
+%<nom%>%<refl%>:%>%{г%}%{А1%}%{А2%} Clit ;  ! this is both nom and acc
+
+%<gen%>:%>%{г%}%{I%}%{й%}н Clit ;
+%<gen%>%<refl%>:%>%{г%}%{I%}%{й%}нх%>%{А1%}%{А2%} Clit ;
+
+%<abl%>:%>%{г%}%{А1%}%{А2%}с Clit ;
+%<abl%>%<refl%>:%>%{г%}%{А1%}%{А2%}с%{А1%}%{А2%} Clit ;
+
+%<ins%>:%>%{г%}%{А1%}%{А2%}р Clit ;
+%<ins%>%<refl%>:%>%{г%}%{А1%}%{А2%}р%>%{А1%}%{А2%} Clit ;
+
+%<dat%>:%>%{а%}%{Д%} Clit ;               ! (with exceptional forms in т)
+%<dat%>%<refl%>:%>д%{А1%}%{А2%} Clit ;    ! (with exceptional forms in т)
+
+%<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
+
+%<gens%>:%>%{а%}н # ;
+
+%<dir%>:%>% %{Р%}%{У%}%{У%} Clit ;
+
+
+LEXICON Cases-ExtraN
+
+%<nom%>: Clit ;
+%<acc%>:%>%{I%}%{й%}г Clit ;
+
+%<refl%>:%>%{г%}%{А1%}%{А2%} Clit ;  ! this is both nom and acc
+
+%<gen%>:%>%{Н%}%{I%}%{й%} Clit ;
+%<gen%>%<refl%>:%>%{Н%}%{I%}%{й%}х%>%{А1%}%{А2%} Clit ;
+
+%<abl%>:%>%{Н%}%{А1%}%{А2%}с Clit ;
+%<abl%>%<refl%>:%>%{Н%}%{А1%}%{А2%}с%>%{А1%}%{А2%} Clit ;
+
+%<ins%>:%>%{Н%}%{А1%}%{А2%}р Clit ;
+%<ins%>%<refl%>:%>%{Н%}%{А1%}%{А2%}р%>%{А1%}%{А2%} Clit ;
+
+%<dat%>:%>%{а%}%{Н%}д Clit ;               ! (with exceptional forms in т)
+%<dat%>%<refl%>:%>%{Н%}д%{А1%}%{А2%} Clit ;  ! (with exceptional forms in т)
+
+%<dat%>%<attr%>:%{а%}%{Н%}% д%{А%}х%{ь%} Clit ;
+
+%<gens%>:%>%{а%}н # ;
+
+%<dir%>:%>% %{Р%}%{У%}%{У%} Clit ;
+
+LEXICON PrnInfl
+
+%<prn%>: Cases-Normal ;
+
+LEXICON DetInfl
+
+%<det%>: # ;
+
+LEXICON Ninfl
+
+%<n%>: Cases-Normal ;
+%<n%>%<pl%>:%>%{н%}%{У%}%{У%}д Cases-Normal ;
+
+LEXICON Ninfl-Person
+
+%<n%>: Cases-Normal ;
+%<n%>%<pl%>:%>% нар Cases-Normal ;
+
+LEXICON Ninfl-NoPl
+
+%<n%>: Cases-Normal ;
+
+LEXICON Ninfl-Pl
+
+%<n%>%<pl%>: Cases-Normal ;
+
+
+LEXICON Ninfl-ExtraN
+
+%<n%>: Cases-ExtraN ;
+%<n%>%<pl%>:%>н%{У%}%{У%}д Cases-Normal ;
+
+LEXICON Ninfl-ExtraN-NoPl
+
+%<n%>: Cases-ExtraN ;
+
+LEXICON NP-COG-M
+
+%<np%>%<cog%>%<m%>: Cases-Normal ;
+
+LEXICON NP-ORG
+
+%<np%>%<org%>: Cases-Normal ;
+%<np%>%<org%>%<attr%>: # ;
+
+
+LEXICON NP-TOP
+
+%<np%>%<top%>: Cases-Normal ;
+%<np%>%<top%>%<attr%>: # ;
+
+LEXICON Vinfl-Common
+
+%<aor%>:%>н%{А%} # ;
+%<aor%>%<neg%>:%>%{а%}хгүй Clit ;
+%<aor%>:%{а%}х Clit-Qst ;
+
+%<past%>:%>с%{а%}н Clit ;
+%<past%>%<neg%>:%>%{г%}%{А1%}%{А2%}гүй Clit ;
+%<past%>%<frm%>:%>%{а%}в # ;
+
+%<past%>%<evid%>:%{Ж%}ээ # ;
+
+%<ifi%>:%>л%{А1%}%{А2%} # ;
+%<hab%>:%>д%{а%}г Clit ;
+
+%<ger%>:%>%{а%}х Cases-Normal ;
+%<ger_imp%>:%>д%{а%}г Cases-Normal ;
+%<ger_prf%>:%>с%{а%}н Cases-Normal ;
+
+%<gna%>:%>%{а%}%{Ж%} # ;
+%<gna_imp%>:%>%{а%}н # ;
+%<gna_prf%>:%>%{г%}%{А1%}%{А2%}д # ;
+%<gna_cnd%>:%>%{В%}%{А%}л # ;
+%<gna_until%>:%>%{Т%}%{А%}л # ;
+
+%<imp%>%<infm%>: # ;
+%<imp%>:%>%{А1%}%{А2%}р%{А%}й # ;     ! simple imperative
+%<sug%>:%>%{А1%}%{А2%}ч # ;           ! suggestion
+
+LEXICON Vinfl-TV
+
+%<v%>%<tv%>: Vinfl-Common ;
+
+LEXICON Vinfl-IV
+
+%<v%>%<iv%>: Vinfl-Common ;
+
+LEXICON Pronouns
+
+ᠪᠢ%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:ᠪᠢ  Clit ;
+ᠪᠢ%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ᠨᠠᠮᠠᠢ Clit ;
+ᠪᠢ%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ᠮᠢᠨᠦ Clit ;
+ᠪᠢ%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ᠨᠠᠳᠠ ᠠᠴᠠ Clit ;
+ᠪᠢ%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ᠨᠠᠳᠠ ᠳᠤ Clit ;
+ᠪᠢ%<prn%>%<pers%>%<p1%>%<sg%>%<ins%>:ᠨᠠᠳᠠ ᠪᠠᠷ Clit ;
+ᠪᠢ%<prn%>%<pers%>%<p1%>%<sg%>%<px%>:ᠮᠢᠨᠦᠬᠢ Clit ;
+ᠪᠢ%<prn%>%<pers%>%<p1%>%<sg%>%<gens%>:ᠮᠢᠨᠢ Clit ;
+
+ᠪᠢᠳᠡ%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:ᠪᠢᠳᠡ Clit ;
+ᠪᠢᠳᠡ%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:ᠪᠢᠳᠡᠨ ᠢ Clit ;
+ᠪᠢᠳᠡ%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:ᠪᠢᠳᠡᠨ ᠦ Clit ;
+ᠪᠢᠳᠡ%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:ᠪᠢᠳᠡᠨ ᠡᠴᠡ Clit ;
+ᠪᠢᠳᠡ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:ᠪᠢᠳᠡᠨ ᠳᠦ Clit ;
+ᠪᠢᠳᠡ%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:ᠪᠢᠳᠡᠨ ᠢᠶᠡᠷ Clit ;
+ᠪᠢᠳᠡ%<prn%>%<pers%>%<p1%>%<pl%>%<px%>:ᠪᠢᠳᠡᠨ ᠦ ᠬᠢ Clit ;
+
+ᠴᠢ%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ᠴᠢ Clit ;
+ᠴᠢ%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ᠴᠢᠮᠠᠢ Clit ;
+ᠴᠢ%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ᠴᠢᠨᠤ Clit ;
+ᠴᠢ%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:ᠴᠢᠮ᠎ᠠ ᠠᠴᠠ Clit ;
+ᠴᠢ%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:ᠴᠢᠮ᠎ᠠ ᠳᠤ Clit ;
+ᠴᠢ%<prn%>%<pers%>%<p2%>%<sg%>%<ins%>:ᠴᠢᠮ᠎ᠠ ᠪᠠᠷ Clit ;
+ᠴᠢ%<prn%>%<pers%>%<p2%>%<sg%>%<px%>:ᠴᠢᠨᠤᠬᠢ Clit ;
+ᠴᠢ%<prn%>%<pers%>%<p2%>%<sg%>%<gens%>:ᠴᠢᠨᠢ Clit ;
+
+ᠲᠠ%<prn%>%<pers%>%<p2%>%<frm%>%<nom%>:ᠲᠠ Clit ;
+ᠲᠠ%<prn%>%<pers%>%<p2%>%<frm%>%<acc%>:ᠲᠠᠨ ᠢ Clit ;
+ᠲᠠ%<prn%>%<pers%>%<p2%>%<frm%>%<gen%>:ᠲᠠᠨ ᠤ Clit ;
+!ᠲᠠ%<prn%>%<pers%>%<p2%>%<frm%>%<abl%>:ᠲᠠ Clit ;
+ᠲᠠ%<prn%>%<pers%>%<p2%>%<frm%>%<dat%>:ᠲᠠᠨ ᠳᠤ Clit ;
+!ᠲᠠ%<prn%>%<pers%>%<p2%>%<frm%>%<ins%>:ᠲᠠ Clit ;
+ᠲᠠ%<prn%>%<pers%>%<p2%>%<frm%>%<px%>:ᠲᠠᠨ ᠤ ᠬᠢ Clit ;
+ᠲᠠ%<prn%>%<pers%>%<p2%>%<frm%>%<gens%>:ᠲᠠᠨᠢ Clit ;
+
+ᠲᠡᠷᠡ%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ᠲᠡᠷᠡ Clit ;
+ᠲᠡᠷᠡ%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:ᠲᠡᠭᠦᠨ ᠢ Clit ;
+ᠲᠡᠷᠡ%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:ᠲᠡᠭᠦᠨ ᠦ Clit ;
+ᠲᠡᠷᠡ%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:ᠲᠡᠭᠦᠨ ᠡᠴᠡ Clit ;
+ᠲᠡᠷᠡ%<dem%>%<p3%>%<sg%>%<dat%>:тэнд Clit ;     ! loc
+ᠲᠡᠷᠡ%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:ᠲᠡᠭᠦᠨ ᠳᠦ Clit ;
+ᠲᠡᠷᠡ%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:ᠲᠡᠷᠡ ᠪᠡᠷ Clit ;
+ᠲᠡᠷᠡ%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:ᠲᠡᠭᠦᠨ ᠦ ᠬᠢ Clit ;
+ᠲᠡᠷᠡ%<prn%>%<pers%>%<p3%>%<sg%>%<gens%>:ᠨᠢ Clit ;
+
+ᠲᠡᠳᠡ%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>:ᠲᠡᠳᠡ Clit ;
+ᠲᠡᠳᠡ%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:ᠲᠡᠳᠡᠨ ᠢ Clit ;
+ᠲᠡᠳᠡ%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:ᠲᠡᠳᠡᠨ ᠦ Clit ;
+ᠲᠡᠳᠡ%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:ᠲᠡᠳᠡᠨ ᠡᠴᠡ Clit ;
+ᠲᠡᠳᠡ%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:ᠲᠡᠳᠡᠨ ᠳᠦ Clit ;
+ᠲᠡᠳᠡ%<prn%>%<pers%>%<p3%>%<pl%>%<ins%>:ᠲᠡᠳᠡᠨ ᠢᠶᠡᠷ Clit ;
+ᠲᠡᠳᠡ%<prn%>%<pers%>%<p3%>%<pl%>%<px%>:ᠲᠡᠳᠡᠨ ᠦ ᠬᠢ Clit ;
+ᠲᠡᠳᠡ%<prn%>%<pers%>%<p3%>%<pl%>%<gens%>:ᠨᠢ Clit ;
+
+ᠬᠡᠨ PrnInfl ;            ! "who"
+ᠤᠤ PrnInfl ;             ! "what"
+ᠥᠭᠡᠷ᠎ᠡ PrnInfl ;            ! "oneself"
+ᠡᠨᠡ:ᠡᠨᠡ PrnInfl ;         ! "this one"
+ᠶᠠᠮᠠᠷ:ᠶᠠᠮ᠎ᠠ%{а%}р PrnInfl ;  ! "which one"
+ᠲᠡᠶᠢᠮᠦ:ᠲᠡᠶᠢᠮᠦ PrnInfl ;      ! "one like that"
+ᠡᠶᠢᠮᠦ:ᠡᠶᠢᠮᠦ PrnInfl ;        ! "one like this"
+ᠪᠦᠭᠦᠳᠡ:ᠪᠦᠭᠦᠳᠡ PrnInfl ;      ! "everyone"
+
+LEXICON Determiners
+
+ᠡᠨᠡ:ᠡᠨᠡ DetInfl ;        ! "this"
+ᠶᠠᠮᠠᠷ:ᠶᠠᠮᠠᠷ%{а%}р DetInfl ;  ! "which"
+ᠪᠦᠬᠦ:ᠪᠦᠬᠦ DetInfl ;        ! "entire, all, the whole"
+ᠲᠡᠶᠢᠮᠦ:ᠲᠡᠶᠢᠮᠦ DetInfl ;      ! "such a"
+ᠡᠶᠢᠮᠦ:ᠡᠶᠢᠮᠦ DetInfl ;        ! "such a"
+ᠪᠦᠭᠦᠳᠡ:ᠪᠦᠭᠦᠳᠡ DetInfl ;      ! "all"
+
+LEXICON Num
+
+%<num%>: Cases-Normal ;
+
+LEXICON Numbers
+
+ᠨᠢᠭᠡ:ᠨᠢᠭᠡ Num ;            ! "one"
+ᠬᠣᠶᠠᠷ:ᠬᠣᠶᠠᠷ Num ;          ! "two"
+ᠭᠤᠷᠪᠠ:ᠭᠤᠷᠪᠠ%{а%}в Num ;    ! "three"
+ᠳᠥᠷᠪᠡ:ᠳᠥᠷᠪᠡ%{а%}в Num ;    ! "four"
+ᠲᠠᠪᠤ:ᠲᠠᠪᠤ Num ;            ! "five"
+ᠵᠢᠷᠭᠤᠭ᠎ᠠ:ᠵᠢᠷᠭᠤᠭ᠎ᠠ Num ;      ! "six"
+ᠳᠣᠯᠣᠭ᠎ᠠ:ᠳᠣᠯᠣᠭ᠎ᠠ Num ;        ! "seven"
+ᠨᠠᠶᠢᠮᠠ:ᠨᠠᠶᠢᠮᠠ Num ;          ! "eight"
+ᠶᠣᠰᠣ:ᠶᠣᠰᠣ Num ;              ! "nine"
+ᠠᠷᠪᠠ:ᠠᠷᠪᠠ%{а%}в Num ;      ! "ten"
+ᠵᠤᠤ:ᠵᠤᠤ Num ;          ! "hundred"
+ᠮᠢᠩᠭ᠎ᠠ:ᠮᠢᠩᠭ᠎ᠠ Num ;        ! "thousand"
+
+LEXICON ConjCoo
+
+%<cnjcoo%>: # ;
+
+
+LEXICON Postp
+
+%<post%>: # ;
+
+
+LEXICON PostAdv-Infl
+
+%<postadv%>: # ;
+
+
+LEXICON Adj
+
+%<adj%>: # ;
+%<adj%>%<subst%>: Cases-Normal ;
+
+
+LEXICON Adv
+
+%<adv%>: # ;
+
+
+LEXICON Nouns
+
+ᠪᠠᠰᠠ:ᠪᠠᠰᠠ Ninfl ; ! "other, "
+ᠴᠠᠭ:ᠴᠠᠭ Ninfl-ExtraN ; ! "watch/clock"
+ᠭᠠᠷ:ᠭᠠᠷ Ninfl ; ! "hand"
+ᠨᠠᠰᠤ:ᠨᠠᠰᠤ Ninfl ; ! "age"
+ᠪᠠᠶᠢᠷᠢ Ninfl ; ! "apartment"
+ᠪᠠᠩᠬᠢ Ninfl ; ! "bank"
+ᠨᠣᠮ:ᠨᠣᠮ Ninfl ; ! "book"
+ᠭᠤᠲᠤᠯ Ninfl ; ! "boot(s)"
+ᠳᠠᠷᠤᠭ᠎ᠠ Ninfl ; ! "boss"
+ᠠᠯᠠᠭ᠎ᠠ Ninfl-ExtraN ; ! "palm"
+ᠨᠢᠳᠦ Ninfl-ExtraN ; ! "eye"
+ᠮᠣᠳᠣ Ninfl-ExtraN-NoPl ; ! "tree"
+ᠮᠣᠳᠣ:ᠮᠣᠳᠣᠳ Ninfl-Pl ; ! "trees"
+ᠠᠬ᠎ᠠ Ninfl ; ! "older brother"
+ᠳᠡᠭᠦᠦ:ᠳᠡᠭᠦᠦ Ninfl-Person ; ! "younger sibling"
+ᠮᠠᠯᠠᠭᠠᠢ Ninfl ; ! "hat"
+ᠮᠠᠰᠢᠨ Ninfl ; ! "car"
+ᠮᠤᠤᠷ Ninfl ; ! "cat"
+ᠰᠠᠨᠳᠠᠯᠢ Ninfl ; ! "chair"
+ᠬᠡᠦᠬᠡᠳ:ᠬᠡᠦᠬᠡᠳ Ninfl ; ! "child"
+ᠠᠩᠭᠢ Ninfl ; ! "classroom"
+ᠫᠠᠯᠢᠲ᠋ᠣ᠋ Ninfl ; ! "coat"
+ᠰᠠᠪᠠ Ninfl ; ! "container"
+ᠤᠯᠤᠰ Ninfl ; ! "country"
+ᠬᠥᠳᠡᠭᠡ Ninfl ; ! "countryside"
+ᠦᠬᠡᠷ Ninfl ; ! "cow"
+ᠠᠶᠠᠭ᠎ᠠ Ninfl ; ! "cup"
+ᠥᠬᠢᠨ Ninfl ; ! "girl; daughter"
+ᠡᠳᠦᠷ Ninfl ; ! "day"
+ᠨᠣᠬᠠᠢ:ᠨᠣᠬᠠᠢ Ninfl ; ! "dog"
+ᠬᠠᠭᠠᠯᠭ᠎ᠠ Ninfl ; ! "door"
+ᠳᠠᠱᠢᠨᠵᠠ Ninfl ; ! "dress"
+ᠵᠢᠯᠣᠭᠣᠴᠢ Ninfl ; ! "driver"
+ᠣᠷᠣᠢ Ninfl ; ! "evening"
+ᠳᠠᠰᠬᠠᠯ Ninfl ; ! "exercise"
+ᠠᠪᠤ Ninfl ; ! "father"
+ᠴᠡᠴᠡᠭ Ninfl ; ! "flower"
+ᠬᠣᠭᠣᠯᠠ:ᠬᠣᠭᠣᠯᠠ Ninfl-ExtraN ; ! "food"
+ᠰᠡᠷᠡᠭᠡ Ninfl ; ! "fork"
+ᠨᠠᠶᠢᠵᠠ Ninfl ; ! "friend"
+ᠵᠢᠮᠢᠰ Ninfl ; ! "fruit"
+ᠪᠡᠯᠡᠭ Ninfl ; ! "gift"
+ᠪᠡᠭᠡᠯᠡᠢ Ninfl ; ! "glove"
+ᠡᠪᠦᠭᠡ Ninfl ; ! "grandfather"
+ᠡᠮᠡᠭᠡ Ninfl ; ! "grandmother"
+ᠮᠠᠯᠴᠢᠨ Ninfl ; ! "herder"
+ᠮᠣᠷᠢ Ninfl ; ! "(word/riding) horse"
+ᠠᠳᠤᠭᠤ Ninfl ; ! "(herd) horse"
+ᠳᠠᠭᠤᠤ Ninfl-ExtraN ; ! "song"
+ᠪᠠᠶᠢᠰᠢᠩ Ninfl ; ! "house"
+ᠨᠥᠬᠥᠷ Ninfl ; ! "husband"
+ᠬᠦᠷᠮ᠎ᠡ Ninfl ; ! "jacket"
+ᠬᠢᠲᠤᠭ᠎ᠠ Ninfl ; ! "knife"
+ᠬᠢᠴᠢᠶᠡᠯ Ninfl ; ! "lesson"
+ᠵᠠᠬᠢᠶ᠎ᠠ Ninfl ; ! "message"
+ᠦᠰᠦᠭ Ninfl ; ! "letter"
+ᠮᠠᠯ Ninfl ; ! "livestock"
+ᠮᠢᠬ᠎ᠠ Ninfl ; ! "meat"
+ᠥᠷᠯᠥᠭᠡ Ninfl ; ! "morning"
+ᠡᠵᠢ Ninfl ; ! "mother"
+ᠤᠤᠯ:ᠤᠤᠯ Ninfl ; ! "mountain"
+ᠤᠤᠯ:ᠤᠤᠯ Ninfl-ExtraN ; ! "mountain"
+ᠬᠥᠭᠵᠢᠮ᠎ᠡ:ᠬᠥᠭᠵᠢᠮ᠎ᠡ Ninfl ; ! "music"
+ᠨᠡᠷᠡ Ninfl ; ! "name"
+ᠳᠡᠪᠲᠡᠷ Ninfl ; ! "notebook"
+ᠳ᠋ᠤᠭᠠᠷ Ninfl ; ! "number"
+ᠭᠠᠳᠠᠭ᠎ᠠ Ninfl ; ! "outside"
+ᠥᠮᠥᠳᠥ Ninfl ; ! "pants"
+ᠦᠵᠦᠭ Ninfl ; ! "pen"
+ᠬᠠᠷᠠᠨᠳᠠ Ninfl ; ! "pencil"
+ᠤᠲᠠᠰᠤ Ninfl ; ! "phone"
+ᠵᠢᠷᠤᠭ Ninfl ; ! "picture"
+ᠭᠠᠬᠠᠢ Ninfl-ExtraN ; ! "pig"
+ᠲᠠᠪᠠᠭ Ninfl ; ! "plate"
+ᠠᠶᠢᠮᠠᠭ:айм%{а%}г Ninfl ; ! "aimag (province)"
+ᠠᠰᠠᠭᠤᠯᠲᠠ Ninfl ; ! "question"
+ᠲᠠᠪᠠᠭ Ninfl ; ! "coat"
+ᠥᠷᠥᠭᠡ Ninfl ; ! "room"
+ᠣᠷᠢᠶᠠᠯᠲᠠ Ninfl ; ! "scarf"
+ᠰᠤᠷᠭᠠᠭᠤᠯᠢ Ninfl ; ! "school"
+ᠥᠭᠦᠯᠡᠪᠦᠷᠢ Ninfl ; ! "sentence"
+ᠬᠣᠨᠢ Ninfl ; ! "sheep"
+ᠬᠣᠨᠢ Ninfl ; ! "shirt"
+ᠪᠣᠲ᠋ᠢᠨ᠋ᠺ Ninfl ; ! "shoes"
+ᠱᠣᠷᠣ ᠳᠤ Ninfl ; ! "shorts"
+ᠡᠭᠡᠴᠢ Ninfl ; ! "sister"
+ᠪᠠᠩᠵᠠᠯ Ninfl ; ! "skirt"
+ᠣᠶᠢᠮᠣᠰᠤ Ninfl ; ! "sock"
+ᠤᠮᠳᠠ ᠪᠠᠨ Ninfl ; ! "soft drink"
+ᠬᠡᠦ Ninfl ; ! "son"
+ᠬᠠᠯᠪᠠᠭ᠎ᠠ Ninfl ; ! "spoon"
+ᠪᠤᠤᠵᠠ Ninfl ; ! "steamed meat dumpling"
+ᠳᠡᠯᠭᠡᠭᠦᠷ Ninfl ; ! "store"
+ᠰᠢᠷᠡᠭᠡ Ninfl-ExtraN ; ! "table"
+ᠪᠠᠭᠰᠢ Ninfl ; ! "teacher"
+ᠵᠠᠩᠭᠢᠶ᠎ᠠ Ninfl ; ! "tie"
+ᠲᠣᠭᠯᠠᠭᠠᠮ Ninfl ; ! "toy, game"
+ᠨᠣᠭᠣᠭ᠎ᠠ Ninfl ; ! "vegetable"
+ᠤᠰᠤ Ninfl ; ! "water"
+ᠡᠬᠡᠨᠡᠷ Ninfl ; ! "wife"
+ᠴᠣᠩᠬᠣ Ninfl ; ! "window"
+ᠦᠭᠡ Ninfl ; ! "word"
+ᠠᠵᠢᠯ:аж%{а%}л Ninfl ; ! "work"
+ᠵᠢᠯ Ninfl ; ! "year"
+ᠳᠡᠭᠦᠦ:ᠳᠡᠭᠦᠦ Ninfl ; ! "younger sibling"
+ᠲᠡᠮᠡᠭᠡ Ninfl-ExtraN ; ! "camel"
+ᠡᠯᠵᠢᠭᠡ Ninfl ; ! "donkey"
+ᠪᠤᠭᠤ Ninfl ; ! "deer"
+ᠵᠢᠭᠠᠨ Ninfl ; ! "elephant"
+ᠬᠤᠯᠠᠨ Ninfl ; ! "wild asian ass / onager"
+ᠴᠠᠭᠠᠰᠤ Ninfl ; ! "paper"
+ᠡᠵᠡᠨ:ᠡᠵᠡᠨ Ninfl ; ! "master/lord"
+ᠭᠠᠵᠠᠷ:ᠭᠠᠵᠠᠷ Ninfl ; ! "place, land"
+ᠬᠦᠮᠦᠨ:ᠬᠦᠮᠦᠨ Ninfl-NoPl ; ! "person"
+ᠬᠦᠮᠦᠨ:ᠬᠦᠮᠦᠰ Ninfl-Pl ; ! "person"
+ᠦᠶ᠎ᠡ Ninfl ; ! "time"
+ᠦᠶ᠎ᠡ Ninfl-ExtraN ; ! "joint"
+ᠳᠠᠭᠤᠤ Ninfl ; ! "song"
+ᠨᠤᠲᠤᠭ Ninfl ; ! "homeland"
+ᠭᠡᠷ Ninfl ; ! "home"
+ᠬᠣᠲᠠ Ninfl ; ! "city"
+ᠵᠢᠷᠦᠬᠡ Ninfl ; ! "heart"
+ᠠᠮᠠ Ninfl ; ! "mouth"
+ᠪᠡᠶ᠎ᠡ Ninfl ; ! "body"
+хэл Ninfl ; ! "tongue, language"
+ᠲᠣᠯᠣᠭᠠᠢ Ninfl-ExtraN ; ! "head"
+ᠶᠠᠭᠤᠮ᠎ᠠ Ninfl ; ! "thing"
+!ᠤᠴᠢᠷ Ninfl ; ! "cause, reason"
+ᠶᠣᠰᠣ Ninfl ; ! "etiquette"?
+ᠪᠠᠶᠠᠷ Ninfl ; ! "happiness/luck/fortune"
+ᠮᠢᠬ᠎ᠠ Ninfl-ExtraN ; ! "meat"
+ᠴᠠᠢ Ninfl-ExtraN ; ! "tea"
+ᠦᠨᠡᠨ Ninfl ; ! "truth"
+ᠦᠨ᠎ᠡ:ᠦᠨ᠎ᠡ Ninfl ; ! "price"
+ᠳᠡᠯᠡᠬᠡᠢ Ninfl ; ! "world"
+ᠵᠠᠮ Ninfl ; ! "road"
+ᠳᠤᠮᠳᠠ Ninfl ; ! "middle"
+ᠤᠬᠠᠭᠠᠨ Ninfl ; ! "intellect"
+ᠤᠰᠤ Ninfl ; ! "water"
+ᠰᠦ᠋ Ninfl ; ! "milk"
+ᠲᠠᠯ᠎ᠠ Ninfl ; ! "field, area"
+ᠭᠠᠯ Ninfl ; ! "fire"
+ᠭᠥᠷ ᠡᠴᠡ Ninfl-ExtraN ; ! "~gazelle"
+ᠥᠷᠥᠭᠡ Ninfl-ExtraN ; ! "room"
+ᠰᠠᠷ᠎ᠠ:ᠰᠠᠷ᠎ᠠ Ninfl ; ! "month"
+ᠰᠠᠷ᠎ᠠ:ᠰᠠᠷ᠎ᠠ Ninfl-ExtraN ; ! "moon"
+ᠮᠡᠯᠡᠬᠡᠢ Ninfl-ExtraN ; ! "turtle"
+ᠠᠵᠢᠯ Ninfl ; ! "work"
+ᠳᠠᠯᠠᠢ:ᠳᠠᠯᠠᠢ Ninfl ; ! "sea"
+ᠣᠷᠣᠰᠢᠯ:ᠣᠷᠣᠰᠢ%{а%}л Ninfl ; ! "introduction"
+ᠲᠣᠶᠢᠮᠣ Ninfl ; ! "report/review/summary?"
+ᠥᠭᠦᠯᠡᠯ:ᠦᠭᠦᠯᠡ%{а%}л Ninfl ; ! "speech/presentation"
+ᠰᠡᠳᠦᠪ:ᠰᠡᠳ%{а%}в Ninfl ; ! "topic/theme"
+ᠠᠮᠢᠲᠠᠨ:ᠠᠮᠢ ᠳᠤ%{а%}н Ninfl-NoPl ; ! "animal"
+ᠱᠠᠰᠢᠨ:ᠱᠠᠰᠢᠨ Ninfl ; ! "religion"
+ᠣᠷᠣᠨ:ᠣᠷᠣᠨ Ninfl ; ! "place"
+ᠣᠨ:ᠣᠨ Ninfl ; ! "calendar year"
+ᠰᠡᠬᠡᠭᠡᠲᠡᠨ:ᠰᠡᠬᠡᠭᠡᠲᠡᠨ Ninfl ; ! "intellectual"
+ᠤᠴᠢᠷ:ᠤᠴᠢᠷ Ninfl ; ! "cause, reason"
+ᠴᠡᠷᠢᠭ:ᠴᠡᠷᠢᠭ Ninfl ; ! "soldier"?
+ᠲᠡᠷᠭᠡ:ᠲᠡᠷᠭᠡ Ninfl ; ! "cart/wagon"
+ᠦᠵᠡᠰᠬᠦᠯᠡᠩ:ᠦᠵᠡᠰᠬᠦᠯᠡᠩ Ninfl ; ! "beauty, presentation"
+ᠰᠠᠩ:ᠰᠠᠩ Ninfl ; ! "store [room], warehouse, treasury, etc."
+ᠨᠣᠮ ᠤᠨ% ᠰᠠᠩ:ᠨᠣᠮ ᠤᠨ% ᠰᠠ%{ң%} Ninfl ; ! "library"
+ᠺᠦᠪᠠ:ᠺᠦᠪᠠ Ninfl ; ! "Cuba"
+ᠲᠩᠷᠢ:ᠲᠩᠷᠢ Ninfl ; ! "sky, heaven"
+ᠪᠤᠷᠬᠠᠨ:ᠪᠤᠷᠬᠠᠨ Ninfl ; ! "God"
+ᠡᠵᠡᠨ:ᠡᠵᠡᠨ Ninfl ; ! "The Lord"
+ᠬᠠᠭᠠᠨ:ᠬᠠᠭᠠᠨ Ninfl ; ! "king"
+ᠬᠦᠴᠦ:ᠬᠦᠴᠦ Ninfl ; ! "strength"
+ᠲᠠᠬᠢᠯ:ᠲᠠᠬᠢᠯ Ninfl ; ! "sacrifice/offering"
+ᠵᠠᠭᠤᠨ:ᠵᠠᠭᠤᠨ Ninfl ; ! "century, era"
+ᠰᠢᠳᠤᠷᠭᠤ:ᠰᠢᠳᠤᠷᠭᠤ Ninfl ; ! "repute, reputation" (?)
+ᠵᠡᠷᠭᠡ:ᠵᠡᠷᠭᠡ Ninfl ; ! "manner, degree"
+ᠭᠣᠣᠯ:ᠭᠣᠣᠯ Ninfl ; ! "river"
+ᠤᠳᠠᠭ᠎ᠠ:ᠤᠳᠠᠭ᠎ᠠ Ninfl ; ! "time, occurrence"
+ᠵᠠᠰᠠᠭ:ᠵᠠᠰᠠᠭ Ninfl ; ! "government"
+ᠲᠥᠷᠥ:ᠲᠥᠷᠥ Ninfl ; ! "state, regime"
+ᠠᠪᠤᠷᠭᠤ:ᠠᠪᠤᠷᠭᠤ Ninfl ; ! "champion"
+ᠬᠡᠰᠡᠭ:ᠬᠡᠰᠡᠭ Ninfl ; ! "section, piece"
+ᠲᠡᠦᠬᠡ:ᠲᠡᠦᠬᠡ Ninfl ; ! "history"
+ᠲᠡᠦᠬᠡ:ᠲᠡᠦᠬᠡ Ninfl ; ! "state"
+ᠵᠤᠨ:ᠵᠤᠨ Ninfl ; ! "summer"
+ᠡᠪᠦᠯ:ᠡᠪᠦᠯ Ninfl ; ! "winter"
+ᠠᠮᠵᠢᠯᠲᠠ:ᠠᠮᠵᠢᠯᠲᠠ Ninfl ; ! "success"
+ᠬᠣᠯᠪᠣᠭ᠎ᠠ:ᠬᠣᠯᠪᠣᠭ᠎ᠠ Ninfl ; ! "connection, federation"
+ᠴᠢᠰᠤ:ᠴᠢᠰᠤ Ninfl ; ! "blood"
+ᠡᠯᠢᠭᠡ:ᠡᠯᠢᠭᠡ Ninfl ; ! "liver"
+ᠪᠤᠷᠬᠠᠨ:ᠪᠤᠷᠬᠠᠨ Ninfl ; ! "god"
+ᠡᠬᠡ:ᠡᠬᠡ Ninfl-ExtraN ; ! "beginning"
+ᠭᠡᠷ% ᠪᠦᠯᠢ:ᠭᠡᠷ% ᠪᠦᠯᠢ Ninfl ; ! "family"
+ᠡᠷᠬᠡ:ᠡᠷᠬᠡ Ninfl ; ! "rights"
+ᠲᠤᠩᠬᠠᠭᠯᠠᠯ:ᠲᠤᠩᠬᠠᠭᠯᠠᠯ Ninfl ; ! "declaration"
+ᠣᠷᠣᠰᠢᠯ:ᠣᠷᠣᠰᠢᠯ Ninfl ; ! "introduction, preamble"
+ᠭᠡᠰᠢᠭᠦᠨ:ᠭᠡᠰᠢᠭᠦᠨ Ninfl ; ! "member"
+ᠡᠷᠬᠡ% ᠴᠢᠯᠦᠭᠡ:ᠡᠷᠬᠡ% ᠴᠢᠯᠦᠭᠡ Ninfl ; ! "freedom"
+ᠬᠤᠪᠢᠩ:хᠬᠤᠪᠢᠩ Ninfl ; ! "bucket"
+шар айраг:шар айраг Ninfl ; ! "beer"
+ᠥᠨᠳᠥᠷ:ᠥᠨᠳᠥᠷ Ninfl ; ! "height"
+ᠡᠳ᠋:ᠡᠳ᠋ Ninfl ; ! "thing, property"
+ᠠᠮᠵᠢᠯᠲᠠ:ᠠᠮᠵᠢᠯᠲᠠ Ninfl ; ! "success"
+ᠬᠠᠭᠠᠨ:ᠬᠠᠭᠠᠨ Ninfl ; ! "khan"
+ᠮᠥᠩᠭᠥ:ᠮᠥᠩᠭᠥ Ninfl ; ! "money, silver"
+ᠰᠤᠶᠤᠯ:ᠰᠤᠶᠤᠯ Ninfl ; ! "culture"
+ᠲᠡᠷᠢᠭᠦᠨ:ᠲᠡᠷᠢᠭᠦᠨ Ninfl ; ! "chief, head, leader"
+ᠴᠠᠬᠢᠯᠭᠠᠨ:ᠴᠠᠬᠢᠯᠭᠠᠨ Ninfl ; ! "electricity, lightning"
+ᠡᠪᠡᠳᠴᠢᠨ:ᠡᠪᠡᠳᠴᠢᠨ Ninfl ; ! "disease, ill, sore, disorder, sickness"
+ᠪᠠᠭ:ᠪᠠᠭ Ninfl ; ! "team"
+ᠮᠧᠳᠠᠯ:ᠮᠧᠳᠠᠯ Ninfl ; ! "medal"
+ᠲᠥᠪ:ᠲᠥᠪ Ninfl ; ! "center"\
+ᠨᠤᠲᠤᠭ:ᠨᠤᠲᠤᠭ Ninfl ; ! "homeland"
+ᠡᠳ᠋ᠦᠨᠵᠠᠰᠠᠭ Ninfl ; ! "economy, economics"
+ᠮᠥᠷᠡᠨ:мөр%{а%}н Ninfl ; ! "river"
+ᠬᠠᠭᠠᠰ:ᠬᠠᠭᠠᠰ Ninfl ; ! "half"
+ᠰᠣᠷᠢᠨᠵᠢ :ᠰᠣᠷᠢᠨᠵᠢ  Ninfl-ExtraN ; ! "magnet"
+ᠨᠠᠷᠠ :ᠨᠠᠷᠠ  Ninfl-ExtraN ; ! "sun"
+ᠦᠨᠳᠦᠰᠦ :ᠦᠨᠳᠦᠰᠦ  Ninfl ; ! "basis, foundation"
+ᠡᠰᠡᠷᠡᠭ:ᠡᠰᠡᠷᠡᠭ Ninfl ; ! "contradition"
+ᠱᠢᠷᠦ:ᠱᠢᠷᠦ Ninfl ; ! "coral"
+ᠳᠠᠯᠠᠨ:ᠳᠠᠯᠠᠨ Ninfl ; ! "barrier"
+ᠬᠠᠳᠠ:ᠬᠠᠳᠠ Ninfl-ExtraN ; ! "wall of stone, roof, cliff"
+ᠡᠷᠭᠢ:ᠡᠷᠭᠢ Ninfl ; ! "shore, coast"
+ᠲᠣᠭᠲᠠᠴᠠ:ᠲᠣᠭᠲᠠᠴᠠ Ninfl ; ! "formation"
+ᠣᠪᠣᠷᠭᠣ:ᠣᠪᠣᠷᠭᠣ Ninfl ; ! "accumulation"
+ᠬᠢᠷᠢ:ᠬᠢᠷᠢ Ninfl-ExtraN ; ! "dirt"
+ᠬᠠᠷ᠎ᠠ:ᠬᠠᠷ᠎ᠠ Ninfl ; ! "black" !
+ᠬᠣᠣᠷ:ᠬᠣᠣᠷ Ninfl-ExtraN ; ! "poison"
+ᠬᠤᠷ᠎ᠠ:ᠬᠤᠷ᠎ᠠ Ninfl ; ! "precipitation"
+ᠬᠡᠭᠦᠷ:ᠬᠡᠭᠦᠷ Ninfl-ExtraN ; ! "dead body"
+ᠬᠤᠭᠤᠷ:ᠬᠤᠭᠤᠷ Ninfl ; ! "fiddle"
+ᠬᠠᠶᠢᠷ᠎ᠠ:ᠬᠠᠶᠢᠷ᠎ᠠ Ninfl ; ! "love"
+ᠬᠢᠯᠢ:ᠬᠢᠯᠢ Ninfl ; ! "border"
+ᠬᠡᠯᠡ:ᠬᠡᠯᠡ Ninfl ; ! "tongue, language"
+ᠬᠥᠯ:ᠬᠥᠯ Ninfl ; ! "foot"
+ᠬᠢᠭᠢᠯᠢ:ᠬᠢᠭᠢᠯᠢ Ninfl ; ! "violin"
+ᠬᠠᠤᠯᠢ:ᠬᠠᠤᠯᠢ Ninfl ; ! "law"
+ᠬᠥ:ᠬᠥ Ninfl ; ! "soot"
+ᠢᠷ:ᠢᠷ Ninfl-ExtraN ; ! "blade"
+ᠦᠷ᠎ᠡ:ᠦᠷ᠎ᠡ Ninfl ; ! "seed"
+ᠡᠷ᠎ᠡ:ᠡᠷ᠎ᠡ Ninfl ; ! "man" !
+ᠥᠷᠥ:ᠥᠷᠥ Ninfl-ExtraN ; ! "debt"
+ᠦᠦᠷ:ᠦᠦᠷ Ninfl ; ! "dawn"
+ᠦᠦᠷ:ᠦᠦᠷ Ninfl-ExtraN ; ! "nest"
+ᠥᠭᠡᠷ᠎ᠡ:ᠥᠭᠡᠷ᠎ᠡ Ninfl ; ! "other"
+ᠠᠭᠤᠷ:ᠠᠭᠤᠷ Ninfl ; ! "anger"
+ᠠᠭᠤᠷ:ᠠᠭᠤᠷ Ninfl-ExtraN ; ! "vapor"
+ᠣᠶᠢᠷ᠎ᠠ:ᠣᠶᠢᠷ᠎ᠠ Ninfl ; ! "one that's near"
+ᠡᠭᠦᠯᠡ:ᠡᠭᠦᠯᠡ Ninfl-ExtraN ; ! "cloud"
+ᠦᠢᠯᠡ:ᠦᠢᠯᠡ Ninfl-ExtraN ; ! "deed/action?"
+ᠳᠠᠢᠰᠣᠨ:ᠳᠠᠢᠰᠣᠨ Ninfl ; ! "enemy, rival"
+ᠡᠪᠡᠳᠴᠢᠨ:ᠡᠪᠡᠳᠴᠢᠨ Ninfl ; ! "illness, disease"
+ᠠᠷᠢᠭᠣᠨ ᠴᠡᠪᠡᠷ:ᠠᠷᠢᠭᠣᠨ ᠴᠡᠪᠡᠷ Ninfl ; ! "sanitary"
+ᠠᠵᠢᠯ ᠬᠦᠳᠡᠯᠮᠦᠷᠢ:ᠠᠵᠢᠯ ᠬᠦᠳᠡᠯᠮᠦᠷᠢ Ninfl ; ! "labour"
+ᠡᠷᠳᠡᠮ ᠨᠣᠮ:ᠡᠷᠳᠡᠮ ᠨᠣᠮ Ninfl ; ! "knowledge, learning"
+
+
+
+
+
+LEXICON Verbs
+
+ᠪᠣᠯ Vinfl-IV ; ! "be"
+ᠪᠠᠢ Vinfl-IV ; ! "be"
+ᠦᠵᠡ Vinfl-TV ; ! "see"
+ᠬᠠᠷ᠎ᠠ:хар%{ъ%} Vinfl-TV ; ! "look at"
+ᠬᠠᠷ᠎ᠠ Vinfl-IV ; ! "say" / quotative marker
+ᠠᠪ Vinfl-TV ; ! "take"
+ᠢᠷ:ᠢᠷ%{ъ%} Vinfl-IV ; ! "come"
+ᠶᠠᠪᠤ:ᠶᠠᠪᠤ%{ъ%} Vinfl-IV ; ! "go"
+ᠣᠴᠢ:ᠣᠴᠢ Vinfl-IV ; ! "go"
+ᠥᠭ Vinfl-TV ; ! "give"
+ᠲᠡᠭ Vinfl-IV ; ! "do such"
+ᠢᠩᠭᠡ Vinfl-IV ; ! "do thus"
+ᠪᠠᠷᠢ:ᠪᠠᠷᠢ Vinfl-TV ; ! "grab"
+ᠰᠣᠨᠣᠰ Vinfl-IV ; ! "listen"  FIXME: IV/TV?
+ᠪᠣᠰ Vinfl-IV ; ! "stand"
+ᠴᠢᠳᠠ Vinfl-IV ; ! "be able to" FIXME: IV/TV?
+ᠶᠠᠷᠢ:ᠶᠠᠷᠢ Vinfl-IV ; ! "speak"
+ᠭᠠᠷ:ᠭᠠᠷ Vinfl-IV ; ! "leave"
+ᠣᠯ Vinfl-TV ; ! "find"
+ᠬᠠᠢ Vinfl-TV ; ! "look for"
+ᠮᠠᠷᠲᠠ Vinfl-TV ; ! "forget"
+ᠲᠠᠪᠢ:ᠲᠠᠪᠢ Vinfl-TV ; ! "put"
+ᠬᠡᠢ Vinfl-TV ; ! "do/make/put in"
+ᠬᠡᠯᠡ Vinfl-IV ; ! "say"
+ᠬᠦᠷᠢ:ᠬᠦᠷᠢ Vinfl-TV ; ! "reach"
+ᠠᠮᠢᠳᠤᠷᠠ Vinfl-IV ; ! "live"
+ᠠᠵᠢᠯ Vinfl-IV ; ! "work"
+ᠡᠬᠢᠯᠡ Vinfl-IV ; ! "begin"
+ᠳᠠᠭᠤᠰ Vinfl-IV ; ! "finish"
+ᠭᠠᠷ:ᠭᠠᠷ Vinfl-IV ; ! "leave"
+ᠣᠷᠣ:ᠣᠷᠣ%{ъ%} Vinfl-IV ; ! "go/come in, enter"
+ᠵᠠᠷ:ᠵᠠᠷ Vinfl-TV; ! "announce for sale" ??
+ᠵᠣᠷᠢᠭᠤᠯ:ᠵᠣᠷᠢᠭᠤᠯ Vinfl-TV ; ! "dedicate"
+ᠦᠢᠯᠡ ᠳᠦ:ᠦᠢᠯᠡ ᠳᠦ Vinfl-TV ; ! "create"
+ᠢᠳᠡ:ᠢᠳᠡ Vinfl-TV ; ! "eat"
+ᠰᠠᠩ:ᠰᠠᠩ Vinfl-TV ; ! "miss"
+ᠪᠣᠯᠢ:ᠪᠣᠯᠢ Vinfl-TV ; ! "stop, halt, bring to an end"
+ᠰᠢᠨᠵᠢ:ᠰᠢᠨᠵᠢ Vinfl-TV ; ! "investigate" ?
+ᠵᠠᠰᠠ:ᠵᠠᠰᠠ Vinfl-TV ; ! "fix"
+ᠬᠣᠯᠪ:ᠬᠣᠯᠪ Vinfl-IV ; ! "tie, connect" - takes comm objects
+ᠰᠣᠩᠭᠣ:ᠰᠣᠩᠭᠣ Vinfl-TV ; ! "choose"
+ᠣᠶᠢᠯᠠᠭ᠎ᠠ:ᠣᠶᠢᠯᠠᠭ᠎ᠠ Vinfl-TV ; ! "understand"
+ᠪᠦᠲᠦᠭᠡ:ᠪᠦᠲᠦᠭᠡ Vinfl-TV ; ! "create"  ! Use/MT
+ᠤᠤ:ᠤᠤ Vinfl-TV ; ! "drink"
+ᠮᠡᠳᠡ:ᠮᠡᠳᠡ Vinfl-TV ; ! "know"
+ᠬᠡᠮ ᠢᠶᠡᠨ:ᠬᠡᠮ ᠢᠶᠡᠨ Vinfl-TV ; ! "say (literary)"
+ᠰᠤᠤ:ᠰᠤᠤ Vinfl-IV ; ! "sit"
+ᠣᠷᠣᠯᠴᠠ:ᠣᠷᠣᠯᠴᠠ Vinfl-IV ; ! "catch up, step in"
+ᠲᠣᠭᠯ:ᠲᠣᠭᠯ Vinfl-IV ; ! "play"
+ᠪᠤᠢ% ᠪᠣᠯ:ᠪᠤᠢ% ᠪᠣᠯ Vinfl-IV ; ! "come into being"
+ᠬᠤᠭᠤᠷ:ᠬᠤᠭᠤᠷ Vinfl-TV ; ! "fry"
+ᠬᠣᠷᠢ:ᠬᠣᠷᠢ Vinfl-TV ; ! "suppress"
+ᠬᠦᠷᠢ:ᠬᠦᠷᠢ Vinfl-IV ; ! "reach (+dat)"
+ᠬᠥᠷᠦ:ᠬᠥᠷᠦ Vinfl-IV ; ! "subside"
+ᠬᠦᠯᠡ:ᠬᠦᠯᠡ Vinfl-TV ; ! "tie up"
+ᠬᠡᠯᠡ:ᠬᠡᠯᠡ Vinfl-IV ; ! "speak"
+ᠬᠠᠯᠠ:ᠬᠠᠯᠠ Vinfl-IV ; ! "get hot"
+ᠬᠢᠭᠢᠯᠢ:ᠬᠢᠭᠢᠯᠢ Vinfl-TV ; ! "inflate"
+ᠬᠡᠦᠯ:ᠬᠡᠦᠯ Vinfl-TV ; ! "lend money"
+ᠬᠡᠭᠡᠯᠢ:ᠬᠡᠭᠡᠯᠢ Vinfl-TV ; ! "decorate"
+ᠬᠥᠯᠡ:ᠬᠥᠯᠡ Vinfl-TV ; ! "clean soot"
+ᠬᠠᠭᠤᠯ:ᠬᠠᠭᠤᠯ Vinfl-TV ; ! "copy"
+ᠬᠠᠶᠢᠯ:ᠬᠠᠶᠢᠯ Vinfl-IV ; ! "melt" TV:хайлуул-
+ᠬᠤᠶᠢᠯᠠ:ᠬᠤᠶᠢᠯᠠ Vinfl-TV ; ! "roll up"
+ᠬᠠᠯᠢ:ᠬᠠᠯᠢ Vinfl-IV ; ! "overflow"
+ᠬᠣᠯᠢ:ᠬᠣᠯᠢ Vinfl-TV ; ! "mix in"
+ᠢᠷ:ᠢᠷ Vinfl-IV ; ! "come"
+ᠦᠷ᠎ᠡ:ᠦᠷ᠎ᠡ Vinfl-TV ; ! "rub?"
+ᠡᠷ᠎ᠡ:ᠡᠷ᠎ᠡ Vinfl-TV ; ! "look for"
+ᠥᠷᠥ:ᠥᠷᠥ Vinfl-TV ; ! "arrange"
+ᠣᠷᠣ:ᠣᠷᠣ Vinfl-IV ; ! "enter"
+ᠤᠷ᠎ᠠ:ᠤᠷ᠎ᠠ Vinfl-TV ; ! "pull?"
+ᠦᠦᠷ:ᠦᠦᠷ Vinfl-TV ; ! "carry on the back"
+ᠡᠭᠡᠷᠡ:ᠡᠭᠡᠷᠡ Vinfl-IV ; ! "stammer"ш
+ᠠᠷ:ᠠᠷ Vinfl-IV ; ! "get dry (of mouth)"
+ᠦᠢᠷᠡ:ᠦᠢᠷᠡ Vinfl-IV ; ! "crumble" TV: үйрүүл
+ᠤᠷᠢ:ᠤᠷᠢ Vinfl-TV ; ! "invite"
+ᠢᠯᠡ:ᠢᠯᠡ Vinfl-TV ; ! "rub"
+ᠡᠯ᠎ᠡ:ᠡᠯ᠎ᠡ Vinfl-IV ; ! "get worn down"
+ᠠᠯᠠ:ᠠᠯᠠ Vinfl-TV ; ! "kill"
+ᠣᠯ:ᠣᠯ Vinfl-TV ; ! "find"
+ᠥᠭᠡᠯᠡ:ᠥᠭᠡᠯᠡ Vinfl-TV ; ! "criticise?"
+ᠤᠬᠢᠯᠠ:ᠤᠬᠢᠯᠠ Vinfl-IV ; ! "cry"
+ᠣᠯᠢ:ᠣᠯᠢ Vinfl-TV ; ! "gore"
+ᠤᠯᠢ:ᠤᠯᠢ Vinfl-IV ; ! "yawn, wail, moan"
+ᠰᠡᠷᠭᠡᠢᠯᠡᠬᠦ:ᠰᠡᠷᠭᠡᠢᠯᠡᠬᠦ Vinfl-IV ; ! "be cautious, guard against, prevent"
+ᠬᠡᠷᠡᠭᠲᠡᠢ:ᠬᠡᠷᠡᠭᠲᠡᠢ Vinfl-TV ; ! "needed"
+ᠡᠷᠬᠢᠮᠯᠡᠬᠦ:ᠡᠷᠬᠢᠮᠯᠡᠬᠦ Vinfl-IV ; ! "value, prize"
+ᠣᠷᠣᠯᠴᠠᠬᠤ:ᠣᠷᠣᠯᠴᠠᠬᠤ Vinfl-IV ; ! "participate, take part in"
+ᠰᠣᠷᠣᠯᠴᠠᠬᠤ:ᠰᠣᠷᠣᠯᠴᠠᠬᠤ Vinfl-TV ; ! "study"
+
+
+
+LEXICON Conjunctions
+
+ᠪᠥᠭᠡᠳ:ᠪᠥᠭᠡᠳ ConjCoo ; ! "along with" ?
+ᠪᠠ:ᠪᠠ ConjCoo ; ! "and"
+ᠪᠠᠰᠠ:ᠪᠠᠰᠠ ConjCoo ; ! "and"
+ᠬᠠᠷᠢᠨ:ᠬᠠᠷᠢᠨ ConjCoo ; ! ~"but"
+ᠡᠰᠡᠪᠡᠯ:ᠡᠰᠡᠪᠡᠯ ConjCoo ; ! "if"
+ᠪᠣᠯᠤᠨ:ᠪᠣᠯᠤᠨ ConjCoo ;
+ᠭᠡᠪᠡᠴᠦ:ᠭᠡᠪᠡᠴᠦ ConjCoo ; ! "but"
+ᠪᠤᠶᠤ:ᠪᠤᠶᠤ ConjCoo ;
+ᠬᠡᠷᠪᠡ:ᠬᠡᠷᠪᠡ ConjCoo ; ! ~"if"
+ᠬᠡᠷᠪᠡ:ᠬᠡᠷᠪᠡ ConjCoo ; ! ~"if"
+ᠪᠣᠯᠭᠠᠨ:ᠪᠣᠯᠭᠠᠨ ConjCoo ; ! emphasiser?
+ᠪᠣᠯᠪᠠᠴᠤ:ᠪᠣᠯᠪᠠᠴᠤ ConjCoo ; ! "although"
+ᠲᠤᠯᠠ:ᠲᠤᠯᠠ ConjCoo ; ! "seeing that, insomuchas"
+
+
+LEXICON Postpositions
+
+ᠪᠣᠯ:ᠪᠣᠯ Postp ;        ! topicaliser
+ᠰᠢᠭ:ᠰᠢᠭ Postp ;        ! "like"
+ᠪᠦᠷ:ᠪᠦᠷ Postp ;        ! "each"
+ᠡᠮᠦᠨ᠎ᠡ:ᠡᠮᠦᠨ᠎ᠡ Postp ;      ! "before, until" ! FIXME: takes attr
+ᠳᠠᠷᠠᠭ᠎ᠠ:ᠳᠠᠷᠠᠭ᠎ᠠ Postp ;    ! "after"         ! FIXME: takes attr
+ᠭᠡᠪᠡᠯ:ᠭᠡᠪᠡᠯ Postp ;
+ᠳᠡᠭᠡᠷ᠎ᠡ:ᠳᠡᠭᠡᠷ᠎ᠡ Postp ;      ! "on (top of)"   ! FIXME: takes attr
+ᠳᠣᠲᠣᠷ᠎ᠠ:ᠳᠣᠲᠣᠷ᠎ᠠ Postp ;    ! "in(side of)"   ! FIXME: takes attr
+ᠳᠣᠣᠷ᠎ᠠ:ᠳᠣᠣᠷ᠎ᠠ Postp ;      ! "under"         ! FIXME: takes attr
+ᠲᠤᠬᠠᠢ:ᠲᠤᠬᠠᠢ Postp ;    ! "about"
+ᠭᠠᠳᠠᠨ᠎ᠠ:ᠭᠠᠳᠠᠨ᠎ᠠ Postp ;    ! "outside"
+ᠲᠥᠯᠥᠭᠡ:ᠲᠥᠯᠥᠭᠡ Postp ;    !
+ᠲᠤᠯᠠᠳᠠ:ᠲᠤᠯᠠᠳᠠ Postp ;      !
+ᠬᠦᠷᠲᠡᠯ᠎ᠡ:ᠬᠦᠷᠲᠡᠯ᠎ᠡ Postp ;  ! "until"
+ᠬᠣᠶᠢᠰᠢ:ᠬᠣᠶᠢᠰᠢ Postp ;      ! "since"
+ᠬᠤᠪᠢ ᠳᠤ:ᠬᠤᠪᠢ ᠳᠤ Postp ;    ! "regarding"
+
+
+LEXICON Postadverbs
+
+ᠴᠤ:ᠴᠤ PostAdv-Infl ; ! "not any"
+ᠬᠠᠮᠲᠤ:ᠬᠠᠮᠲᠤ PostAdv-Infl ; ! "together"
+ᠪᠢᠰᠢ:ᠪᠢᠰᠢ PostAdv-Infl ; ! "not"
+ᠯᠠ:ᠯᠠ PostAdv-Infl ; ! "only"
+
+
+LEXICON Adverbs
+
+ᠰᠠᠶᠢᠨ:ᠰᠠᠶᠢᠨ Adv ; ! "well"
+ᠶᠡᠬᠡ:ᠶᠡᠬᠡ Adv ; ! "very"
+ᠳᠠᠬᠢᠨ:ᠳᠠᠬᠢᠨ Adv ; ! "again"
+ᠣᠳᠣ:ᠣᠳᠣ Adv ; ! "now"
+ᠰᠠᠶ᠋ᠢ:ᠰᠠᠶ᠋ᠢ Adv ; ! "just now"
+ᠮᠥᠨ:ᠮᠥᠨ Adv ; ! "right, truly"
+ᠶᠠᠭᠠᠬᠢᠭᠠᠳ:ᠶᠠᠭᠠᠬᠢᠭᠠᠳ Adv ; ! "why"
+ᠲᠡᠶᠢᠮᠦ:ᠲᠡᠶᠢᠮᠦ Adv ; ! "in such a way"
+ᠢᠯᠡᠭᠦᠦ:ᠢᠯᠡᠭᠦᠦ Adv ; ! "rather"
+ᠮᠠᠷᠭᠠᠰᠢ:ᠮᠠᠷᠭᠠᠰᠢ Adv ; ! "tomorrow"
+ᠥᠨᠥᠳᠥᠷ:ᠥᠨᠥᠳᠥᠷ Adv ; ! "today"
+ᠥᠴᠥᠭᠡᠳᠦᠷ:ᠥᠴᠥᠭᠡᠳᠦᠷ Adv ; ! "yesterday"
+ᠬᠠᠮᠤᠭ ᠤᠨ:ᠬᠠᠮᠤᠭ ᠤᠨ Adv ; ! "most"
+ᠪᠦᠬᠦᠢ:ᠪᠦᠬᠦᠢ Adv ; ! "entirely, fully"
+ᠮᠠᠰᠢ:ᠮᠠᠰᠢ Adv ; ! "very (with other adv)"
+ᠦᠷᠭᠦᠯᠵᠢ:ᠦᠷᠭᠦᠯᠵᠢ Adv ; ! "constant, always, constantly, continually"
+ᠬᠡᠵᠢᠶᠡᠳᠡ:ᠬᠡᠵᠢᠶᠡᠳᠡ Adv ; ! "continuously"
+
+
+
+
+
+
+LEXICON Adjectives
+
+ᠵᠠᠯᠬᠠᠭᠤ:ᠵᠠᠯᠬᠠᠭᠤ Adj ; ! "lazy, poky, idle, slothful"
+ᠰᠠᠶᠢᠬᠠᠨ:ᠰᠠᠶᠢᠬᠠᠨ Adj ; ! "good"
+ᠮᠠᠭᠤ:ᠮᠠᠭᠤ Adj ; ! "bad"
+ᠵᠥᠪ:ᠵᠥᠪ Adj ; ! "correct"
+ᠶᠣᠰᠣᠲᠠᠢ:ᠶᠣᠰᠣᠲᠠᠢ Adj ; ! "necessary"
+ᠬᠡᠷᠡᠭᠲᠡᠢ:ᠬᠡᠷᠡᠭᠲᠡᠢ Adj ; ! "necessary"
+ᠡᠮᠡᠭᠲᠡᠢ:ᠡᠮᠡᠭᠲᠡᠢ Adj ; ! "female / woman"
+ᠡᠷᠡᠭᠲᠡᠢ:ᠡᠷᠡᠭᠲᠡᠢ Adj ; ! "male / man"
+ᠠᠳᠠᠯᠢ:ᠠᠳᠠᠯᠢ Adj ; ! "same"
+ᠠᠳᠠᠯᠢᠬᠠᠨ:ᠠᠳᠠᠯᠢᠬᠠᠨ Adj ; ! "similar"
+ᠰᠢᠨ᠎ᠡ:ᠰᠢᠨ᠎ᠡ Adj ; ! "new"
+ᠲᠣᠮᠣ:ᠲᠣᠮᠣ Adj ; ! "big"
+ᠵᠢᠵᠢᠭ:ᠵᠢᠵᠢᠭ Adj ; ! "small"
+ᠵᠢᠵᠢᠭᠬᠡᠨ:ᠵᠢᠵᠢᠭᠬᠡᠨ Adj ; ! "little"
+ᠴᠠᠭᠠᠨ:ᠴᠠᠭᠠᠨ Adj ; ! "white"   !
+ᠤᠯᠠᠭᠠᠨ:ᠤᠯᠠᠭᠠᠨ Adj ; ! "red"       !
+ᠳᠤᠯᠠᠭᠠᠨ:ᠳᠤᠯᠠᠭᠠᠨ Adj ; ! "warm"    !
+ᠴᠢᠬᠤᠯᠠ:ᠴᠢᠬᠤᠯᠠ Adj ; ! "important"
+ᠠᠮᠠᠷᠬᠠᠨ:ᠠᠮᠠᠷᠬᠠᠨ Adj ; ! "easy"
+ᠬᠡᠴᠡᠭᠦᠦ:ᠬᠡᠴᠡᠭᠦᠦ Adj ; ! "hard"
+ᠪᠤᠷᠤᠭᠤ:ᠪᠤᠷᠤᠭᠤ Adj ; ! "wrong, incorrect"
+ᠲᠦᠭᠡᠮᠡᠯ:ᠲᠦᠭᠡᠮᠡᠯ Adj ; ! "general"
+ᠥᠨᠳᠥᠷ:ᠥᠨᠳᠥᠷ Adj ; ! "high"
+ᠰᠢᠭᠰᠢᠭᠡ:ᠰᠢᠭᠰᠢᠭᠡ Adj ; ! "qualifying/championship/final [game]"
+ᠳᠡᠭᠡᠳᠦ:ᠳᠡᠭᠡᠳᠦ Adj ; ! "uppder, top"
+ᠲᠡᠷᠢᠭᠦᠨ:ᠲᠡᠷᠢᠭᠦᠨ Adj ; ! "main, primary"
+ᠲᠥᠪ:ᠲᠥᠪ Adj ; ! "central"
+ᠪᠤᠰᠤᠳ:ᠪᠤᠰᠤᠳ Adj ; ! "other"
+ᠦᠨᠳᠦᠰᠦᠨ:ᠦᠨᠳᠦᠰᠦᠨ Adj ; ! "basic, fundamental"
+ᠡᠰᠡᠷᠡᠭ:ᠡᠰᠡᠷᠡᠭ Adj ; ! "reverse"
+ᠬᠡᠷᠡᠭᠲᠡᠢ:ᠬᠡᠷᠡᠭᠲᠡᠢ Adj ; ! "necessary"
+ᠵᠠᠯᠬᠠᠭᠣ:ᠵᠠᠯᠬᠠᠭᠣ Adj ; ! "lazy"
+ᠡᠷᠭᠢᠭᠦᠦ:ᠡᠷᠭᠢᠭᠦᠦ Adj ; ! "foolish"
+ᠬᠠᠯᠠᠰᠢᠷᠠᠯ  ᠦᠭᠡᠢ:ᠬᠠᠯᠠᠰᠢᠷᠠᠯ  ᠦᠭᠡᠢ Adj ; ! "without reluctance"
+
+
+
+
+
+
+
+ᠵᠡᠭᠦᠨ:ᠵᠡᠭᠦᠨ Adj ; ! "east"
+ᠬᠣᠶᠢᠳ:ᠬᠣᠶᠢᠳ Adj ; ! "north"
+ᠪᠠᠷᠠᠭᠤᠨ:ᠪᠠᠷᠠᠭᠤᠨ Adj ; ! "west"
+ᠡᠮᠦᠨ᠎ᠡ:ᠡᠮᠦᠨ᠎ᠡ Adj ; ! "south"
+
+
+
+LEXICON Particles
+
+ᠪᠤᠤ%<imp%>%<neg%>:ᠪᠤᠤ # ;   ! negative imperative particle ≈ "don't ___ !"
+ᠰᠢᠦ%<mod_ass%>:ᠰᠢᠦ # ;      ! assertive modal particle
+
+LEXICON ProperNouns
+
+ᠢᠽᠠᠷᠢᠯ:ᠢᠽᠠᠷᠢᠯ NP-COG-M ;    ! "Israel"
+ᠶᠡᠰᠦᠰ:ᠶᠡᠰᠦᠰ NP-COG-M ;        ! "Jesus"
+ᠳᠠᠪᠢᠳᠠ:ᠳᠠᠪᠢᠳᠠ NP-COG-M ;      ! "David"
+ᠢ ᠨᠤᠭᠤᠳᠠ:ᠢ ᠨᠤᠭᠤᠳᠠ NP-COG-M ;        ! "Judah"
+ᠮᠣᠰᠧ:ᠮᠣᠰᠧ NP-COG-M ;        ! "Moses"
+
+ᠣᠯᠢᠮᠫ:ᠣᠯᠢᠮᠫ NP-ORG ;        ! "Olympics"
+
+ᠢᠶᠡᠷᠤᠰᠠᠯᠢᠮ:ᠢᠶᠡᠷᠤᠰᠠᠯᠢᠮ NP-TOP ; ! "Jerusalem"
+
+ᠧᠦ᠋ᠷᠣᠫᠠ:ᠧᠦ᠋ᠷᠣᠫᠠ NP-TOP ; ! "Europe"
+ᠠᠽᠢᠶ᠎ᠠ:ᠠᠽᠢᠶ᠎ᠠ NP-TOP ; ! "Asia"
+
+!!!!!! Countries !!!!!!
+
+ᠶᠥᠭᠢᠫᠧᠲ:ᠶᠥᠭᠢᠫᠧᠲ NP-TOP ; ! "Egypt"
+ᠮᠣᠩᠭᠣᠯ:ᠮᠣᠩᠭᠣᠯ NP-TOP ; ! "Mongolia"
+ᠠᠮᠧᠷᠢᠺᠠ:ᠠᠮᠧᠷᠢᠺᠠ NP-TOP ; ! "America"
+ᠬᠢᠲᠠᠳ:ᠬᠢᠲᠠᠳ NP-TOP ; ! "China"
+ᠠᠩᠭᠯᠢ:ᠠᠩᠭᠯᠢ NP-TOP ; ! "England"
+
+
+ᠰᠢᠨᠪᠢ:ᠰᠢᠨᠪᠢ NP-?? ; ! "Sienbei"
+ᠾᠢᠦᠩᠨᠦ:ᠾᠢᠦᠩᠨᠦ NP-?? ; ! "Xiongnu"

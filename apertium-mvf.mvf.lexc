@@ -668,7 +668,7 @@ LEXICON Nouns
 ᠭᠡᠰᠢᠭᠦᠨ:ᠭᠡᠰᠢᠭᠦᠨ Ninfl ; ! "member"
 ᠡᠷᠬᠡ% ᠴᠢᠯᠦᠭᠡ:ᠡᠷᠬᠡ% ᠴᠢᠯᠦᠭᠡ Ninfl ; ! "freedom"
 ᠬᠤᠪᠢᠩ:хᠬᠤᠪᠢᠩ Ninfl ; ! "bucket"
-шар айраг:шар айраг Ninfl ; ! "beer"
+шар% айраг:шар% айраг Ninfl ; ! "beer"
 ᠥᠨᠳᠥᠷ:ᠥᠨᠳᠥᠷ Ninfl ; ! "height"
 ᠡᠳ᠋:ᠡᠳ᠋ Ninfl ; ! "thing, property"
 ᠠᠮᠵᠢᠯᠲᠠ:ᠠᠮᠵᠢᠯᠲᠠ Ninfl ; ! "success"
@@ -686,8 +686,8 @@ LEXICON Nouns
 ᠮᠥᠷᠡᠨ:мөр%{а%}н Ninfl ; ! "river"
 ᠬᠠᠭᠠᠰ:ᠬᠠᠭᠠᠰ Ninfl ; ! "half"
 ᠰᠣᠷᠢᠨᠵᠢ :ᠰᠣᠷᠢᠨᠵᠢ  Ninfl-ExtraN ; ! "magnet"
-ᠨᠠᠷᠠ :ᠨᠠᠷᠠ  Ninfl-ExtraN ; ! "sun"
-ᠦᠨᠳᠦᠰᠦ :ᠦᠨᠳᠦᠰᠦ  Ninfl ; ! "basis, foundation"
+ᠨᠠᠷᠠ:ᠨᠠᠷᠠ  Ninfl-ExtraN ; ! "sun"
+ᠦᠨᠳᠦᠰᠦ:ᠦᠨᠳᠦᠰᠦ  Ninfl ; ! "basis, foundation"
 ᠡᠰᠡᠷᠡᠭ:ᠡᠰᠡᠷᠡᠭ Ninfl ; ! "contradition"
 ᠱᠢᠷᠦ:ᠱᠢᠷᠦ Ninfl ; ! "coral"
 ᠳᠠᠯᠠᠨ:ᠳᠠᠯᠠᠨ Ninfl ; ! "barrier"
@@ -722,9 +722,9 @@ LEXICON Nouns
 ᠦᠢᠯᠡ:ᠦᠢᠯᠡ Ninfl-ExtraN ; ! "deed/action?"
 ᠳᠠᠢᠰᠣᠨ:ᠳᠠᠢᠰᠣᠨ Ninfl ; ! "enemy, rival"
 ᠡᠪᠡᠳᠴᠢᠨ:ᠡᠪᠡᠳᠴᠢᠨ Ninfl ; ! "illness, disease"
-ᠠᠷᠢᠭᠣᠨ ᠴᠡᠪᠡᠷ:ᠠᠷᠢᠭᠣᠨ ᠴᠡᠪᠡᠷ Ninfl ; ! "sanitary"
-ᠠᠵᠢᠯ ᠬᠦᠳᠡᠯᠮᠦᠷᠢ:ᠠᠵᠢᠯ ᠬᠦᠳᠡᠯᠮᠦᠷᠢ Ninfl ; ! "labour"
-ᠡᠷᠳᠡᠮ ᠨᠣᠮ:ᠡᠷᠳᠡᠮ ᠨᠣᠮ Ninfl ; ! "knowledge, learning"
+ᠠᠷᠢᠭᠣᠨ% ᠴᠡᠪᠡᠷ:ᠠᠷᠢᠭᠣᠨ% ᠴᠡᠪᠡᠷ Ninfl ; ! "sanitary"
+ᠠᠵᠢᠯ% ᠬᠦᠳᠡᠯᠮᠦᠷᠢ:ᠠᠵᠢᠯ% ᠬᠦᠳᠡᠯᠮᠦᠷᠢ Ninfl ; ! "labour"
+ᠡᠷᠳᠡᠮ% ᠨᠣᠮ:ᠡᠷᠳᠡᠮ% ᠨᠣᠮ Ninfl ; ! "knowledge, learning"
 
 
 
@@ -930,7 +930,7 @@ LEXICON Adjectives
 ᠬᠡᠷᠡᠭᠲᠡᠢ:ᠬᠡᠷᠡᠭᠲᠡᠢ Adj ; ! "necessary"
 ᠵᠠᠯᠬᠠᠭᠣ:ᠵᠠᠯᠬᠠᠭᠣ Adj ; ! "lazy"
 ᠡᠷᠭᠢᠭᠦᠦ:ᠡᠷᠭᠢᠭᠦᠦ Adj ; ! "foolish"
-ᠬᠠᠯᠠᠰᠢᠷᠠᠯ  ᠦᠭᠡᠢ:ᠬᠠᠯᠠᠰᠢᠷᠠᠯ  ᠦᠭᠡᠢ Adj ; ! "without reluctance"
+ᠬᠠᠯᠠᠰᠢᠷᠠᠯ% ᠦᠭᠡᠢ:ᠬᠠᠯᠠᠰᠢᠷᠠᠯ% ᠦᠭᠡᠢ Adj ; ! "without reluctance"
 
 
 

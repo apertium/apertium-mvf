@@ -101,7 +101,7 @@
 
   <pardefs>
     <!-- Nouns -->
-    <pardef n="ᠳᠠᠢᠰᠣᠨ__n">
+    <!--<pardef n="ᠳᠠᠢᠰᠣᠨ__n">
        <e><p><l/><r><s n="n"/><s n="sg"/></r></p></e>
        <e><p><l>ᠨᠤᠭᠤᠳ</l><r><s n="n"/><s n="pl"/></r></p></e>
     </pardef>
@@ -112,9 +112,9 @@
     <pardef n="ᠵᠠᠶᠢᠷᠮᠠᠭ__n">
        <e><p><l/><r><s n="n"/><s n="sg"/></r></p></e>
        <e><p><l>ᠤᠳ</l><r><s n="n"/><s n="pl"/></r></p></e>
-    </pardef>
+   </pardef> -->
     <!-- Verbs -->
-    <pardef n="ᠰᠡᠷᠭᠡᠶᠢᠯᠡᠬᠦ__vblex">
+    <!--<pardef n="ᠰᠡᠷᠭᠡᠶᠢᠯᠡᠬᠦ__vblex">
         <e><p><l></l><r><s n="vblex"/><s n="pri"/></r></p></e>
     </pardef>
     <pardef n="ᠪᠣᠯ__vblex">
@@ -125,23 +125,23 @@
     </pardef>
     <pardef n="ᠳᠤᠷᠠᠲᠠᠢ__vblex">
         <e><p><l></l><r><s n="vblex"/><s n="pri"/></r></p></e>
-    </pardef>
+    </pardef> -->
     <!-- Pronouns -->
-    <pardef n="ᠪᠢ__prn">
+    <!--<pardef n="ᠪᠢ__prn">
         <e><p><l>ᠪᠢ</l><r>ᠪᠢ<s n="prn"/><s n="subj"/><s n="p1"/><s n="sg"/></r></p></e>
-    </pardef>
+    </pardef>-->
   </pardefs>
 
   <section id="main" type="standard">
     <!-- Define entries within <e> here. -->
-    <e lm="ᠳᠠᠢᠰᠣᠨ"><i>ᠳᠠᠢᠰᠣᠨ</i><par n="ᠳᠠᠢᠰᠣᠨ__n"/></e>
+    <!--<e lm="ᠳᠠᠢᠰᠣᠨ"><i>ᠳᠠᠢᠰᠣᠨ</i><par n="ᠳᠠᠢᠰᠣᠨ__n"/></e>
     <e lm="ᠪᠠᠭᠠᠲᠤᠷ"><i>ᠪᠠᠭᠠᠲᠤᠷ</i><par n="ᠪᠠᠭᠠᠲᠤᠷ__n"/></e>
     <e lm="ᠵᠠᠶᠢᠷᠮᠠᠭ"><i>ᠵᠠᠶᠢᠷᠮᠠᠭ</i><par n="ᠵᠠᠶᠢᠷᠮᠠᠭ__n"/></e>
     <e lm="ᠰᠡᠷᠭᠡᠶᠢᠯᠡᠬᠦ"><i>ᠰᠡᠷᠭᠡᠶᠢᠯᠡᠬᠦ</i><par n="ᠰᠡᠷᠭᠡᠶᠢᠯᠡᠬᠦ__vblex"/></e>
     <e lm="ᠪᠢ"><i/><par n="ᠪᠢ__prn"/></e>
     <e lm="ᠪᠣᠯ"><i>ᠪᠣᠯ</i><par n="ᠪᠣᠯ__vblex"/></e>
     <e lm="ᠢᠳᠡᠬᠦ"><i>ᠢᠳᠡᠬᠦ</i><par n="ᠢᠳᠡᠬᠦ__vblex"/></e>
-    <e lm="ᠳᠤᠷᠠᠲᠠᠢ"><i>ᠳᠤᠷᠠᠲᠠᠢ</i><par n="ᠳᠤᠷᠠᠲᠠᠢ__vblex"/></e>
+    <e lm="ᠳᠤᠷᠠᠲᠠᠢ"><i>ᠳᠤᠷᠠᠲᠠᠢ</i><par n="ᠳᠤᠷᠠᠲᠠᠢ__vblex"/></e>-->
 
   </section>
 

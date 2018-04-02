@@ -165,6 +165,7 @@ Multichar_Symbols
 
 !
 %{k%}
+%{U%}
 
 %>            ! Morpheme boundary
 !%             ! Space
@@ -331,7 +332,7 @@ LEXICON Vinfl-Common
 %<ifi%>:%>л%{А1%}%{А2%} # ;
 %<hab%>:%>д%{а%}г Clit ;
 
-%<ger%>:%>%{k%}ᠦ Cases-Normal ;
+%<ger%>:%>%{k%}%{U%} Cases-Normal ;
 %<ger_imp%>:%>д%{а%}г Cases-Normal ;
 %<ger_prf%>:%>с%{а%}н Cases-Normal ;
 

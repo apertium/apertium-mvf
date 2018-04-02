@@ -6,7 +6,8 @@ Alphabet
  !%{ᠠ%}:ᠠ %{ᠢ%}:ᠢ %{ᠦ%}:ᠦ                     ! Vowels
  !%{ᠷ%}:ᠷ
  !%{ᠠ1%}:ᠠ %{ᠠ2%}:ᠠ                              ! new {ᠠ} vowels
- %{k%}:ᠬ %{k%}:ᠡ
+ %{k%}:ᠬ ! %{k%}:ᠡ
+ %{U%}:ᠤ ! %{U%}:ᠦ
  ° %% %, %. %- %>:0 %  %+                         ! punctuation and boundaries (aldaatai)
  ;
 
@@ -15,9 +16,10 @@ Sets
 
 Aleph = ᠣ ᠸ ᠡ ᠷ ᠲ ᠶ ᠦ ᠢ ᠥ ᠫ ᠠ ᠰ ᠳ ᠹ ᠭ ᠬ ᠵ ᠺ ᠯ ᠽ ᠱ ᠴ ᠤ ᠪ ᠨ ᠮ ;
 
-Vow = ᠡ ᠦ ᠢ ᠠ ;
+Vow = ᠢ ᠡ ᠦ ᠢ ᠠ ;
 
-FrontVow = ᠡ ᠥ ;
+! FrontVow = ᠡ ᠥ ;
+FrontVow = ᠢ ᠡ ᠦ ᠥ ;
 
 BackVow = ᠠ ᠦ ;
 
@@ -34,3 +36,9 @@ Rules
 
 "No rules yet"
 ᠣ:ᠣ <=> _ ;
+
+"{k} as k after front vowels"
+%{k%}:ᠺ <=> [ :FrontVow :Cons* ]/:0* _ ;
+
+"{U} as front ü after front vowels / consonants"
+%{U%}:ᠦ <=> [ :FrontVow :Cons :Cons* ]/:0* _ ;

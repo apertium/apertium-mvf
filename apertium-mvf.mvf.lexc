@@ -728,6 +728,7 @@ LEXICON Nouns
 ᠠᠷᠢᠭᠣᠨ% ᠴᠡᠪᠡᠷ:ᠠᠷᠢᠭᠣᠨ% ᠴᠡᠪᠡᠷ Ninfl ; ! "sanitary"
 ᠠᠵᠢᠯ% ᠬᠦᠳᠡᠯᠮᠦᠷᠢ:ᠠᠵᠢᠯ% ᠬᠦᠳᠡᠯᠮᠦᠷᠢ Ninfl ; ! "labour"
 ᠡᠷᠳᠡᠮ% ᠨᠣᠮ:ᠡᠷᠳᠡᠮ% ᠨᠣᠮ Ninfl ; ! "knowledge, learning"
+ᠪᠠᠭᠠᠲᠤᠷ:ᠪᠠᠭᠠᠲᠤᠷ Ninfl ; ! "hero"  
 
 
 
@@ -1006,4 +1007,3 @@ LEXICON ProperNouns
  %)%<rpar%>:%) # ;
  %\%<sent%>:%\ # ;
  %/%<sent%>:%/ # ;
-

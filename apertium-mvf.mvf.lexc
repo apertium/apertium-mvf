@@ -196,8 +196,8 @@ Punctuation ;
 
 
 LEXICON Clit-Qst
-+вэ%<qst%>:% %{В%}э # ;         ! wh-question
-+уу%<qst%>:% %{У%}%{У%} # ;     ! yes/no-question
++ᠪᠣᠢ%<qst%>:% %{В%}э # ;         ! wh-question
++ᠤᠤ%<qst%>:% %{У%}%{У%} # ;     ! yes/no-question
 
 LEXICON Clit-NonQst
 
@@ -608,7 +608,7 @@ LEXICON Nouns
 ᠴᠠᠢ Ninfl-ExtraN ; ! "tea"
 ᠦᠨᠡᠨ Ninfl ; ! "truth"
 ᠦᠨ᠎ᠡ:ᠦᠨ᠎ᠡ Ninfl ; ! "price"
-ᠳᠡᠯᠡᠬᠡᠢ Ninfl ; ! "world"
+ᠳᠡᠯᠡᠬᠡᠢ:ᠳᠡᠯᠡᠬᠡᠢ Ninfl ; ! "world"
 ᠵᠠᠮ Ninfl ; ! "road"
 ᠳᠤᠮᠳᠠ Ninfl ; ! "middle"
 ᠤᠬᠠᠭᠠᠨ Ninfl ; ! "intellect"
@@ -728,7 +728,12 @@ LEXICON Nouns
 ᠠᠷᠢᠭᠣᠨ% ᠴᠡᠪᠡᠷ:ᠠᠷᠢᠭᠣᠨ% ᠴᠡᠪᠡᠷ Ninfl ; ! "sanitary"
 ᠠᠵᠢᠯ% ᠬᠦᠳᠡᠯᠮᠦᠷᠢ:ᠠᠵᠢᠯ% ᠬᠦᠳᠡᠯᠮᠦᠷᠢ Ninfl ; ! "labour"
 ᠡᠷᠳᠡᠮ% ᠨᠣᠮ:ᠡᠷᠳᠡᠮ% ᠨᠣᠮ Ninfl ; ! "knowledge, learning"
-ᠪᠠᠭᠠᠲᠤᠷ:ᠪᠠᠭᠠᠲᠤᠷ Ninfl ; ! "hero"  
+ᠪᠠᠭᠠᠲᠤᠷ:ᠪᠠᠭᠠᠲᠤᠷ Ninfl ; ! "hero"
+ᠵᠠᠶᠢᠷᠮᠠᠭ:ᠵᠠᠶᠢᠷᠮᠠᠭ Ninfl ; ! "icecream"
+ᠬᠠᠷᠢᠶᠠᠴᠠᠢ:ᠬᠠᠷᠢᠶᠠᠴᠠᠢ Ninfl ; ! "haraatsai"
+ᠬᠠᠪᠤᠷ:ᠬᠠᠪᠤᠷ Ninfl ; ! "spring"
+ᠰᠢᠪᠠᠷ:ᠰᠢᠪᠠᠷ Ninfl ; ! "mud"
+ᠪᠥᠮᠪᠥᠷᠴᠡᠭ:ᠪᠥᠮᠪᠥᠷᠴᠡᠭ Ninfl ; ! "globe"
 
 
 
@@ -736,13 +741,13 @@ LEXICON Nouns
 
 LEXICON Verbs
 
-ᠪᠣᠯ Vinfl-IV ; ! "be"
-ᠪᠠᠢ Vinfl-IV ; ! "be"
+ᠪᠣᠯ:ᠪᠣᠯ Vinfl-IV ; ! "be"
+ᠪᠠᠢ:ᠪᠠᠢ Vinfl-IV ; ! "be"
 ᠦᠵᠡ Vinfl-TV ; ! "see"
 ᠬᠠᠷ᠎ᠠ:хар%{ъ%} Vinfl-TV ; ! "look at"
 ᠬᠠᠷ᠎ᠠ Vinfl-IV ; ! "say" / quotative marker
 ᠠᠪ Vinfl-TV ; ! "take"
-ᠢᠷ:ᠢᠷ%{ъ%} Vinfl-IV ; ! "come"
+ᠢᠷ:ᠢᠷ Vinfl-IV ; ! "come"
 ᠶᠠᠪᠤ:ᠶᠠᠪᠤ%{ъ%} Vinfl-IV ; ! "go"
 ᠣᠴᠢ:ᠣᠴᠢ Vinfl-IV ; ! "go"
 ᠥᠭ Vinfl-TV ; ! "give"
@@ -761,7 +766,7 @@ LEXICON Verbs
 ᠬᠡᠢ Vinfl-TV ; ! "do/make/put in"
 ᠬᠡᠯᠡ Vinfl-IV ; ! "say"
 ᠬᠦᠷᠢ:ᠬᠦᠷᠢ Vinfl-TV ; ! "reach"
-ᠠᠮᠢᠳᠤᠷᠠ Vinfl-IV ; ! "live"
+ᠠᠮᠢᠳᠤᠷᠠᠬᠤ:ᠠᠮᠢᠳᠤᠷᠠᠬᠤ Vinfl-IV ; ! "live"
 ᠠᠵᠢᠯ Vinfl-IV ; ! "work"
 ᠡᠬᠢᠯᠡ Vinfl-IV ; ! "begin"
 ᠳᠠᠭᠤᠰ Vinfl-IV ; ! "finish"
@@ -935,6 +940,7 @@ LEXICON Adjectives
 ᠵᠠᠯᠬᠠᠭᠣ:ᠵᠠᠯᠬᠠᠭᠣ Adj ; ! "lazy"
 ᠡᠷᠭᠢᠭᠦᠦ:ᠡᠷᠭᠢᠭᠦᠦ Adj ; ! "foolish"
 ᠬᠠᠯᠠᠰᠢᠷᠠᠯ% ᠦᠭᠡᠢ:ᠬᠠᠯᠠᠰᠢᠷᠠᠯ% ᠦᠭᠡᠢ Adj ; ! "without reluctance"
+ᠬᠠᠶᠢᠷᠠᠲᠠᠢ:ᠬᠠᠶᠢᠷᠠᠲᠠᠢ Adj ; ! "loved"
 
 
 

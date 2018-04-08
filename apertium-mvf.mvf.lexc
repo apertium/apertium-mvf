@@ -570,7 +570,7 @@ LEXICON Nouns
 ᠰᠢᠷᠡᠭᠡ Ninfl-ExtraN ; ! "table"
 ᠪᠠᠭᠰᠢ Ninfl ; ! "teacher"
 ᠵᠠᠩᠭᠢᠶ᠎ᠠ Ninfl ; ! "tie"
-ᠲᠣᠭᠯᠠᠭᠠᠮ Ninfl ; ! "toy, game"
+ᠲᠣᠭᠯᠠᠭᠠᠮ:ᠲᠣᠭᠯᠠᠭᠠᠮ Ninfl ; ! "toy, game"
 ᠨᠣᠭᠣᠭ᠎ᠠ Ninfl ; ! "vegetable"
 ᠤᠰᠤ Ninfl ; ! "water"
 ᠡᠬᠡᠨᠡᠷ Ninfl ; ! "wife"
@@ -597,10 +597,10 @@ LEXICON Nouns
 ᠬᠣᠲᠠ Ninfl ; ! "city"
 ᠵᠢᠷᠦᠬᠡ Ninfl ; ! "heart"
 ᠠᠮᠠ Ninfl ; ! "mouth"
-ᠪᠡᠶ᠎ᠡ Ninfl ; ! "body"
+ᠪᠡᠶ᠎ᠡ:ᠪᠡᠶ᠎ᠡ Ninfl ; ! "body"
 хэл Ninfl ; ! "tongue, language"
 ᠲᠣᠯᠣᠭᠠᠢ Ninfl-ExtraN ; ! "head"
-ᠶᠠᠭᠤᠮ᠎ᠠ Ninfl ; ! "thing"
+ᠶᠠᠭᠤᠮ᠎ᠠ:ᠶᠠᠭᠤᠮ᠎ᠠ Ninfl ; ! "thing"
 !ᠤᠴᠢᠷ Ninfl ; ! "cause, reason"
 ᠶᠣᠰᠣ Ninfl ; ! "etiquette"?
 ᠪᠠᠶᠠᠷ:ᠪᠠᠶᠠᠷ Ninfl ; ! "happiness/luck/fortune"
@@ -734,6 +734,40 @@ LEXICON Nouns
 ᠬᠠᠪᠤᠷ:ᠬᠠᠪᠤᠷ Ninfl ; ! "spring"
 ᠰᠢᠪᠠᠷ:ᠰᠢᠪᠠᠷ Ninfl ; ! "mud"
 ᠪᠥᠮᠪᠥᠷᠴᠡᠭ:ᠪᠥᠮᠪᠥᠷᠴᠡᠭ Ninfl ; ! "globe"
+ᠭᠠᠷᠠᠭ:ᠭᠠᠷᠠᠭ Ninfl ; ! "planet"
+ᠳᠠᠶᠢᠨ:ᠳᠠᠶᠢᠨ Ninfl ; ! "war"
+ᠡᠩᠬᠡ:ᠡᠩᠬᠡ Ninfl ; ! "peace"
+ᠤᠯᠠᠷᠢᠯ :ᠤᠯᠠᠷᠢᠯ  Ninfl ; ! "season"
+ᠠᠵᠤ ᠠᠬᠤᠢ:ᠠᠵᠤ ᠠᠬᠤᠢ Ninfl ; ! "industry"
+ᠰᠠᠭᠤᠷᠢ:ᠰᠠᠭᠤᠷᠢ Ninfl ; ! "base"
+ᠠᠭᠠᠷᠤᠤᠯ:ᠠᠭᠠᠷᠤᠤᠯ Ninfl ; ! "dried curd"
+ᠵᠤᠳ:ᠵᠤᠳ Ninfl ; ! "disaster"
+ᠪᠦᠲᠦᠭᠡᠯ:ᠪᠦᠲᠦᠭᠡᠯ Ninfl ; ! "invention"
+ᠬᠤᠰᠢ:ᠬᠤᠰᠢ Ninfl ; ! "cedar"
+ᠠᠮᠢᠳᠤᠷᠠᠯ:ᠠᠮᠢᠳᠤᠷᠠᠯ Ninfl ; ! "life"
+ᠵᠦᠵᠦᠭᠡ:ᠵᠦᠵᠦᠭᠡ Ninfl ; ! "drama"
+ᠠᠪᠢᠶᠠᠰ:ᠠᠪᠢᠶᠠᠰ Ninfl ; ! "talent"
+ᠮᠠᠷᠭᠠᠰᠢ:ᠮᠠᠷᠭᠠᠰᠢ Ninfl ; ! "tomorrow"
+ᠥᠨᠥᠳᠥᠷ:ᠥᠨᠥᠳᠥᠷ Ninfl ; ! "today"
+ᠢᠮᠠᠭ᠎ᠠ:ᠢᠮᠠᠭ᠎ᠠ Ninfl ; ! "goat"
+ᠤᠷᠭᠤᠮᠠᠯ:ᠤᠷᠭᠤᠮᠠᠯ Ninfl ; ! "plant"
+ᠲᠡᠮᠳᠡᠭ:ᠲᠡᠮᠳᠡᠭ Ninfl ; ! "sign"
+ᠲᠠᠷᠠᠭ:ᠲᠠᠷᠠᠭ Ninfl ; ! "yogurt"
+ᠰᠥᠨᠢ:ᠰᠥᠨᠢ Ninfl ; ! "night"
+ᠭᠡᠮ:ᠭᠡᠮ Ninfl ; ! "guilt"
+ᠰᠤᠷᠭᠠᠯ:ᠰᠤᠷᠭᠠᠯ Ninfl ; ! "life lesson"
+ᠲᠤᠰᠯᠠᠬᠤ:ᠲᠤᠰᠯᠠᠬᠤ Ninfl ; ! "help"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -746,7 +780,7 @@ LEXICON Verbs
 ᠦᠵᠡ Vinfl-TV ; ! "see"
 ᠬᠠᠷ᠎ᠠ:хар%{ъ%} Vinfl-TV ; ! "look at"
 ᠬᠠᠷ᠎ᠠ Vinfl-IV ; ! "say" / quotative marker
-ᠠᠪ Vinfl-TV ; ! "take"
+ᠠᠪ:ᠠᠪ Vinfl-TV ; ! "take"
 ᠢᠷ:ᠢᠷ Vinfl-IV ; ! "come"
 ᠶᠠᠪᠤ:ᠶᠠᠪᠤ%{ъ%} Vinfl-IV ; ! "go"
 ᠣᠴᠢ:ᠣᠴᠢ Vinfl-IV ; ! "go"
@@ -941,6 +975,7 @@ LEXICON Adjectives
 ᠡᠷᠭᠢᠭᠦᠦ:ᠡᠷᠭᠢᠭᠦᠦ Adj ; ! "foolish"
 ᠬᠠᠯᠠᠰᠢᠷᠠᠯ% ᠦᠭᠡᠢ:ᠬᠠᠯᠠᠰᠢᠷᠠᠯ% ᠦᠭᠡᠢ Adj ; ! "without reluctance"
 ᠬᠠᠶᠢᠷᠠᠲᠠᠢ:ᠬᠠᠶᠢᠷᠠᠲᠠᠢ Adj ; ! "loved"
+ᠬᠦᠢᠲᠡᠨ:ᠬᠦᠢᠲᠡᠨ Adj ; ! "cold’’
 
 
 

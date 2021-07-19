@@ -20,3 +20,5 @@
 /config
 /*.prob
 /.DS_Store
+/*.zhfst
+/test/*-output.txt
